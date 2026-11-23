@@ -1,0 +1,27 @@
+{
+  "reddit": {
+    "subreddits": [],
+    "per_sub": 6,
+    "max_total": 60
+  },
+  "google_trends": {
+    "geo": "US"
+  },
+  "youtube": {
+    "region": "US",
+    "popular_categories": [20, 17, 24, 23],
+    "shorts_keywords": [
+      "what if", "more likely than", "3D animation comparison", "size comparison",
+      "GTA 6", "fortnite"
+    ],
+    "max_keyword_searches": 6,
+    "shorts_window_hours": 48
+  },
+  "instagram": {
+    "enabled": false,
+    "graph_base": "https://graph.instagram.com",
+    "api_version": "v23.0",
+    "max_posts": 40
+  },
+  "keep_history_days": 7
+}
