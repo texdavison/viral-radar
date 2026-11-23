@@ -32,6 +32,13 @@ Viral Idea Radar dashboard (https://claude.ai/artifact/98fJKAJz1xUpqrpcQ9TxKo).
    Quota math: each run uses about 605 units (4 charts + 6 searches at 100 + 1 lookup); 8 runs/day is
    about 4,840 of the free 10,000.
 
+## Instagram interim: manual stats (`ig_manual.json`)
+Until the API token exists, `collect.py` reads `ig_manual.json` (public views/likes/comments scraped
+from the profile) and emits them as `instagram.posts` rows with `source: "manual"`; same keys as the API
+path, but no shares, saves, reach or watch time. To refresh: reopen the profile's Reels tab logged out
+and update the file. Once `IG_ACCESS_TOKEN` and `IG_USER_ID` are set and `instagram.enabled` is true,
+the API path takes over automatically and the manual file is ignored.
+
 ## Instagram (when the founders grant admin)
 Goal: fill `IG_ACCESS_TOKEN` and `IG_USER_ID` in `.env` so each run pulls the account's reels with
 views, reach, likes, comments, shares, saves and average watch time. The cloud scan copies these into

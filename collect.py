@@ -249,11 +249,44 @@ def parse_ig_insights(data: dict) -> dict:
     return out
 
 
+def load_manual_instagram(errors: list) -> dict | None:
+    """Fallback until the API token exists: public stats typed/scraped into ig_manual.json.
+    Same row shape as the API path (plus source="manual"); shares/saves/reach/watch time are absent."""
+    path = ROOT / "ig_manual.json"
+    if not path.exists():
+        return None
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except ValueError as e:
+        errors.append(f"instagram manual file: {e}")
+        return None
+    handle = data.get("handle", "how_does_it_work1")
+    posts = []
+    for r in data.get("reels", []):
+        posts.append({
+            "id": r.get("id"),
+            "caption": clip(r.get("topic") or r.get("caption"), 200),
+            "type": "REELS",
+            "permalink": f"https://www.instagram.com/{handle}/reel/{r.get('id')}/",
+            "posted_at": r.get("date"),
+            "likes": r.get("likes"),
+            "comments": r.get("comments"),
+            "views": r.get("views"),
+            "source": "manual",
+        })
+    return {"posts": posts, "source": "manual", "manual_scraped_at": data.get("scraped_at"),
+            "followers": data.get("followers"),
+            "note": "Public counts only: no shares, saves, reach or watch time until the API token is set."}
+
+
 def collect_instagram(cfg: dict, errors: list) -> dict:
-    if not cfg.get("enabled", True):
-        return {"skipped": "disabled in config.json (instagram.enabled = false)"}
     token, user = os.environ.get("IG_ACCESS_TOKEN"), os.environ.get("IG_USER_ID")
-    if not token or not user:
+    if not cfg.get("enabled", True) or not token or not user:
+        manual = load_manual_instagram(errors)
+        if manual:
+            return manual
+        if not cfg.get("enabled", True):
+            return {"skipped": "disabled in config.json (instagram.enabled = false)"}
         return {"skipped": "no IG_ACCESS_TOKEN / IG_USER_ID in .env"}
     base = cfg.get("graph_base", "https://graph.instagram.com") + "/" + cfg.get("api_version", "v23.0")
     posts = []
