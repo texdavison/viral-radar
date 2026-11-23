@@ -14,6 +14,16 @@
     "min_views": 15000,
     "max_total": 40
   },
+  "topics": {
+    "max_topics": 40,
+    "saturation_topics": 3,
+    "saturation_ttl_hours": 6
+  },
+  "competitors": {
+    "outlier_x": 3.0,
+    "min_views": 5000,
+    "youtube_handles": []
+  },
   "hackernews": {
     "enabled": true,
     "min_points": 50,

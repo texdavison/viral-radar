@@ -26,6 +26,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import statistics
 import sys
 import time
@@ -37,6 +38,11 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT))
+import insights  # noqa: E402  (sibling modules, standard library only)
+import topics as topic_engine  # noqa: E402
+from insights import CAPTION_FEATURES  # noqa: E402
+
 SIGNALS = ROOT / "signals"
 HISTORY = SIGNALS / "history"
 UA = "windows:viral-idea-radar:v1.0 (personal trend research)"
@@ -440,73 +446,106 @@ def collect_instagram(cfg: dict, errors: list) -> dict:
     return {"posts": posts}
 
 
+# ---------------------------------------------------------------- competitor channels (YouTube, needs key)
+
+def iso_duration_seconds(d: str | None) -> int:
+    m = re.fullmatch(r"P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", d or "")
+    if not m:
+        return 0
+    days, h, mi, s = (int(x or 0) for x in m.groups())
+    return days * 86400 + h * 3600 + mi * 60 + s
+
+
+def youtube_reel_rows(videos: dict, max_seconds: int = 180) -> list[dict]:
+    """Shorts-length videos from a videos.list response, in the same row shape as the Instagram reels."""
+    rows = []
+    for v in videos.get("items", []):
+        if iso_duration_seconds((v.get("contentDetails") or {}).get("duration")) > max_seconds:
+            continue
+        sn, st = v.get("snippet") or {}, v.get("statistics") or {}
+        rows.append({"id": v.get("id"), "date": (sn.get("publishedAt") or "")[:10],
+                     "views": int(st.get("viewCount") or 0), "likes": int(st.get("likeCount") or 0),
+                     "comments": int(st.get("commentCount") or 0),
+                     "caption": ((sn.get("title") or "") + "\n" + (sn.get("description") or ""))[:600]})
+    return rows
+
+
+def collect_youtube_competitors(cfg: dict, errors: list) -> list[dict]:
+    """Recent Shorts from channels listed in config.json competitors.youtube_handles (like "@somechannel").
+    About 3 quota units per channel. Feeds the same outlier finder as the Instagram accounts."""
+    key = os.environ.get("YOUTUBE_API_KEY")
+    handles = cfg.get("youtube_handles", [])
+    if not key or not handles:
+        return []
+    out = []
+    for h in handles:
+        try:
+            ch = http_json(f"{YT}/channels", {"part": "contentDetails,statistics", "forHandle": h, "key": key})
+            item = (ch.get("items") or [None])[0]
+            if not item:
+                errors.append(f"youtube competitor {h}: channel not found")
+                continue
+            uploads = item["contentDetails"]["relatedPlaylists"]["uploads"]
+            pl = http_json(f"{YT}/playlistItems", {"part": "contentDetails", "playlistId": uploads,
+                                                    "maxResults": 40, "key": key})
+            ids = [i["contentDetails"]["videoId"] for i in pl.get("items", [])]
+            vids = http_json(f"{YT}/videos", {"part": "snippet,statistics,contentDetails", "id": ",".join(ids), "key": key}) if ids else {}
+            out.append({"handle": h.lstrip("@"), "platform": "youtube",
+                        "followers": int((item.get("statistics") or {}).get("subscriberCount") or 0) or None,
+                        "reels": youtube_reel_rows(vids)})
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"youtube competitor {h}: {e}")
+    return out
+
+
+# ---------------------------------------------------------------- saturation (needs YOUTUBE_API_KEY)
+
+def _load_json(path: Path, default):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return default
+
+
+def collect_saturation(rows: list[dict], cfg: dict, errors: list) -> str:
+    """For the top few topics, count competing Shorts from the last 48h. A search costs 100 YouTube quota
+    units, so only the top topics are checked and each result is cached for a few hours (.cache/, not committed)."""
+    key = os.environ.get("YOUTUBE_API_KEY")
+    if not key:
+        return "skipped: no YOUTUBE_API_KEY in .env (needed to count competing Shorts)"
+    ttl_s = cfg.get("saturation_ttl_hours", 6) * 3600
+    cache_path = ROOT / ".cache" / "saturation.json"
+    cache = _load_json(cache_path, {})
+    now = now_utc()
+    after = iso(now - timedelta(hours=48))
+    for row in rows[: cfg.get("saturation_topics", 3)]:
+        ck = row["topic"].lower()
+        hit = cache.get(ck)
+        if hit and (now - datetime.fromisoformat(hit["at"].replace("Z", "+00:00"))).total_seconds() < ttl_s:
+            row["saturation"] = hit["data"]
+            continue
+        query = " ".join(re.sub(r"\([^)]*\)", " ", row["topic"]).split())
+        try:
+            found = http_json(f"{YT}/search", {"part": "id", "q": query, "type": "video", "videoDuration": "short",
+                                                "order": "viewCount", "publishedAfter": after,
+                                                "maxResults": 25, "key": key})
+            ids = [it["id"]["videoId"] for it in found.get("items", []) if it.get("id", {}).get("videoId")]
+            vids = []
+            if ids:
+                stats = http_json(f"{YT}/videos", {"part": "snippet,statistics", "id": ",".join(ids), "key": key})
+                vids = [_yt_video(v, now) for v in stats.get("items", [])]
+            row["saturation"] = topic_engine.saturation_summary(vids)
+            cache[ck] = {"at": iso(now), "data": row["saturation"]}
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"saturation '{query}': {e}")
+    cache_path.parent.mkdir(exist_ok=True)
+    cache_path.write_text(json.dumps(cache), encoding="utf-8")
+    return "ok"
+
+
 # ---------------------------------------------------------------- learn from your own reels
 
-CAPTION_FEATURES = {
-    "send_this_cta": lambda c: "send this" in c,
-    "type_at_cta": lambda c: "type @" in c,
-    "follow_or_name_ask": lambda c: "follow" in c or "name the" in c,
-    "what_if": lambda c: "what if" in c or "#whatif" in c,
-    "pov": lambda c: c.startswith("pov") or " pov:" in c,
-    "question_in_hook": lambda c: "?" in c.split("\n")[0],
-}
-
-
-def _median(xs: list[float]) -> float | None:
-    return round(statistics.median(xs), 1) if xs else None
-
-
-def analyze_instagram(ig: dict) -> dict | None:
-    """Turn the account's own reels into 'what worked' stats so ideas can be scored against real results.
-    Uses only likes/comments/views, so it works for both the manual file and the API path."""
-    posts = [p for p in ig.get("posts", []) if p.get("views")]
-    if len(posts) < 3:
-        return None
-    followers = ig.get("followers")
-    views = [p["views"] for p in posts]
-    med = statistics.median(views)
-    rows = []
-    for p in posts:
-        v = p["views"]
-        row = {
-            "id": p["id"], "views": v,
-            "outlier_x": round(v / med, 1),                       # views vs this account's median reel
-            "like_rate_pct": round(100 * (p.get("likes") or 0) / v, 2),
-            "comment_rate_pct": round(100 * (p.get("comments") or 0) / v, 2),
-        }
-        if followers:
-            row["views_per_follower"] = round(v / followers, 1)
-        rows.append(row)
-    rows.sort(key=lambda r: r["views"], reverse=True)
-
-    by_id = {p["id"]: p for p in posts}
-    features = {}
-    for name, test in CAPTION_FEATURES.items():
-        yes = [p["views"] for p in posts if test((p.get("caption") or "").lower())]
-        no = [p["views"] for p in posts if not test((p.get("caption") or "").lower())]
-        if len(yes) >= 2 and len(no) >= 2:   # a single reel proves nothing, so no lift number for it
-            features[name] = {"n_with": len(yes), "median_views_with": _median(yes),
-                              "n_without": len(no), "median_views_without": _median(no),
-                              "lift_x": round(statistics.median(yes) / statistics.median(no), 2)}
-    tag_views: dict[str, list[int]] = {}
-    for p in posts:
-        for tag in {t.lower().strip(".,!") for t in (p.get("caption") or "").split() if t.startswith("#")}:
-            tag_views.setdefault(tag, []).append(p["views"])
-    hashtags = sorted(({"tag": t, "n": len(v), "median_views": _median(v)} for t, v in tag_views.items() if len(v) >= 2),
-                      key=lambda r: r["median_views"], reverse=True)
-    best_comment = max(rows, key=lambda r: r["comment_rate_pct"])
-    return {
-        "sample_size": len(posts),
-        "caveat": "small sample: treat as directional, not proof" if len(posts) < 30 else None,
-        "median_views": round(med), "mean_views": round(statistics.mean(views)),
-        "winners": [r["id"] for r in rows if r["outlier_x"] >= 2],
-        "flops": [r["id"] for r in rows if r["outlier_x"] <= 0.5],
-        "best_comment_rate": {"id": best_comment["id"], "pct": best_comment["comment_rate_pct"],
-                              "caption": clip(by_id[best_comment["id"]].get("caption"), 120)},
-        "per_reel": rows,
-        "caption_features": features,
-        "hashtags": hashtags[:10],
-    }
+analyze_instagram = insights.analyze_instagram   # lives in insights.py
 
 
 # ---------------------------------------------------------------- momentum vs last run
@@ -565,6 +604,28 @@ def main() -> int:
     analysis = analyze_instagram(signals["instagram"])
     if analysis:
         signals["instagram_analysis"] = analysis
+
+    # Topic engine: convergence across sources, lifecycle from history, risk flags, saturation.
+    tcfg = cfg.get("topics", {})
+    store_path = SIGNALS / "topic_history.json"
+    store = _load_json(store_path, {})
+    clusters = topic_engine.build_clusters(signals)
+    topic_engine.update_history(store, clusters, started)
+    meta = topic_engine.attach_lifecycle(clusters, store, started)
+    ranked = topic_engine.rank_topics(clusters, tcfg.get("max_topics", 40))
+    meta["saturation"] = collect_saturation(ranked, tcfg, errors)
+    signals["topics"], signals["topic_meta"] = ranked, meta
+
+    ccfg = cfg.get("competitors", {})
+    comp_data = _load_json(ROOT / "competitors_manual.json", None) or {}
+    comp_data = {"scraped_at": comp_data.get("scraped_at"),
+                 "accounts": (comp_data.get("accounts") or []) + collect_youtube_competitors(ccfg, errors)}
+    comp = insights.analyze_competitors(comp_data, ccfg.get("outlier_x", 3.0), ccfg.get("min_views", 5000))
+    if comp:
+        signals["competitor_outliers"] = comp
+    playbook = insights.build_playbook(analysis, signals["instagram"].get("posts", []), comp)
+    if playbook:
+        signals["format_playbook"] = playbook
     latest = SIGNALS / "latest.json"
     previous = None
     if latest.exists():
@@ -581,7 +642,9 @@ def main() -> int:
                f"yt_popular={len(yt.get('popular', []))} yt_shorts={len(yt.get('shorts', []))} "
                f"ig_posts={len(signals['instagram'].get('posts', []))} "
                f"trends_intl={len(signals['google_trends_intl'])} wiki={len(signals['wikipedia'])} "
-               f"hn={len(signals['hackernews'])} ig_analysis={'yes' if analysis else 'no'} errors={len(errors)}")
+               f"hn={len(signals['hackernews'])} ig_analysis={'yes' if analysis else 'no'} "
+               f"topics={len(ranked)} multi_source={sum(1 for t in ranked if t['source_count'] >= 2)} "
+               f"competitor_outliers={len(comp['outliers']) if comp else 0} errors={len(errors)}")
     print(summary)
     for e in errors:
         print("  !", e)
@@ -591,6 +654,7 @@ def main() -> int:
     HISTORY.mkdir(parents=True, exist_ok=True)
     body = json.dumps(signals, ensure_ascii=False, indent=1)
     latest.write_text(body, encoding="utf-8")
+    store_path.write_text(json.dumps(store, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     (HISTORY / (started.strftime("%Y%m%d-%H%M") + ".json")).write_text(body, encoding="utf-8")
     prune_history(cfg.get("keep_history_days", 7))
     return 0

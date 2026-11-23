@@ -1,6 +1,6 @@
 {
   "scraped_at": "2026-11-23",
-  "source": "public profile page, logged out (views from reels grid, likes/comments from each reel page). No shares, saves, reach or watch time.",
+  "source": "public profile page, logged out. Views (from the /reels/ grid) exist for 12 reels; the 6 added from the main profile grid have likes/comments only (views null, likes rounded where Instagram shows K). No shares, saves, reach or watch time.",
   "handle": "how_does_it_work1",
   "followers": 764,
   "reels": [
@@ -111,6 +111,60 @@
       "comments": 9,
       "topic": "Elizabeth Holmes / blood machine",
       "caption": "The scariest thing at the foot of your bed wants one drop of blood 🩸👁️\n\nThe no-blinking part is real. So is the machine that never worked.\n\nSend this to the friend who'd still invest 👇\n\n#elizabethholmes #theranos #sleepparalysis #whatif #funfacts"
+    },
+    {
+      "id": "DfurUY-NgeH",
+      "date": "2026-11-14",
+      "views": null,
+      "likes": 8035,
+      "comments": 91,
+      "topic": "Jensen Huang dentist molars",
+      "caption": "He ran a $4 trillion company. Now he’s coming for your molars. 🦷💚\n\nWait for the oven. Yes, that part is real too.\n\nTag the friend who needs straight teeth 👇 (they know who they are)\n\n#jensenhuang #nvidia #whatif #techhumor #dentist"
+    },
+    {
+      "id": "DfsgNPHtUr6",
+      "date": "2026-11-13",
+      "views": null,
+      "likes": 458000,
+      "comments": 1827,
+      "topic": "Fortnite pirate token odds vs testicular torsion (stat-shock)",
+      "caption": "You’re 34× more likely to get testicular torsion than the Fortnite pirate token. 🏴‍☠️💀\n\n1 in 137,500 per chest. You’d need about 95,000 chests for a coin-flip shot, or 66 days of opening one a minute with no sleep.\n\nSend this to the friend who’s still grinding for it 👇\n\n#fortnite #fortnitepiratetoken #fortniteclips #gaming #gamer #funny #didyouknow #fyp"
+    },
+    {
+      "id": "DfsLhY1tyPF",
+      "date": "2026-11-13",
+      "views": null,
+      "likes": 967,
+      "comments": 17,
+      "topic": "Kim Jong Un's barber",
+      "caption": "Kim Jong Un's barber: the worst job on Earth isn’t dangerous because of the scissors. 💈\n\nYou’d have to match yesterday’s haircut exactly, sweep up every single hair so nobody gets his DNA, and travel by armored train with his personal toilet.\n\nAnd the wildest part: one report claims he’s scared of barbers and cuts it himself.\n\nWould you take the job for $1 million a year? Yes or no 👇\n\n#kimjongun #northkorea #whatif #didyouknow #explained"
+    },
+    {
+      "id": "DftKsjeNh5s",
+      "date": "2026-11-13",
+      "views": null,
+      "likes": 705,
+      "comments": 23,
+      "topic": "GTA 6 wait: bodies kept score",
+      "caption": "We’ve all been waiting so long our bodies kept score 💀🚽\n\n4,700 poops. 6.5 ft of hair. A whole baby is in middle school now. GTA 6 finally drops November 19.\n\nTag the friend who’s been refreshing since 2013 👇\n\n#gta6 #gtavi #gta6trailer #rockstargames #gaming #gamingmemes #gamer #ps5 #xbox #fyp"
+    },
+    {
+      "id": "DfqcXA7tP8Q",
+      "date": "2026-11-12",
+      "views": null,
+      "likes": 24000,
+      "comments": 178,
+      "topic": "What if you married Netanyahu",
+      "caption": "What if you married Netanyahu? 💍👀\n\nYou’d be wife number four, and the hardest part would be the honeymoon. Bodyguards at the wedding, a courtroom on your calendar, and a map where half the world’s countries are off-limits.\n\nWould you say “I do”? 👇\n\nFollow for more “what if” scenarios you can’t stop thinking about.\n\n#netanyahu #whatif #israel #geopolitics #wedding #politics #worldnews #fyp #viral #explore"
+    },
+    {
+      "id": "Dfqj8rbtE_U",
+      "date": "2026-11-12",
+      "views": null,
+      "likes": 5337,
+      "comments": 25,
+      "topic": "LeBron pregnant in Game 7",
+      "caption": "What if LeBron found out he was 8 months pregnant in Game 7 of the Finals? What if LeBron got pregnant during Game 7 of the NBA Finals? The refs call six players on the floor, Philly boos the baby, and the kid comes out 6'1\" with a shoe deal.\n\n#lebron #nba #nbafinals #whatif #nbamemes #3danimation"
     }
   ]
 }

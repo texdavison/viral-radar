@@ -14,6 +14,18 @@ Viral Idea Radar dashboard (https://claude.ai/artifact/98fJKAJz1xUpqrpcQ9TxKo).
   rates and caption-trait lift computed from the account's own reels).
   Every source is optional and fails soft; errors are listed in `signals/latest.json`.
   The cloud scan needs `CLOUD_SCAN_ADDENDUM.md` pasted into its instructions to use the new keys.
+- `topics.py`: the topic engine. Merges the same subject across sources (`topics[]`, token-overlap
+  matching), tracks heat per topic in `signals/topic_history.json` (committed, compact) to label
+  emerging/rising/peaking/fading, flags risky topics, and summarizes YouTube Shorts saturation.
+  Lifecycle needs history: stages are low-confidence until a topic has been seen on 3+ runs.
+- `insights.py`: analysis of the account's own reels (views and likes), competitor outliers, and the
+  `format_playbook` the cloud scan uses to write idea packages.
+- Saturation (top 3 topics, cached 6h in `.cache/`) and YouTube competitor channels
+  (`config.json` > `competitors.youtube_handles`, like `"@channel"`) both need `YOUTUBE_API_KEY`.
+- `competitors_manual.json`: public stats for similar Instagram accounts. Read them with
+  `tools/scrape_instagram.js` through the browser pane. Views only appear on the `/reels/` tab, which
+  Instagram sometimes login-walls: if so, stop; never log in or work around it.
+- `tests/`: `py -m unittest discover -s tests` (keep it green before pushing).
 - `config.json`: subreddits, YouTube keywords and categories, Instagram API settings. Edit freely.
 - `run.ps1`: pull, collect, commit `signals/`, push. Writes `last-run.log`.
 - `.env.example`: copy to `.env` for keys. `.env` is gitignored and must never be committed.

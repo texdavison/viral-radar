@@ -1,0 +1,5 @@
+{
+  "scraped_at": null,
+  "_how_to_fill": "Add public Instagram accounts similar to @how_does_it_work1 as {handle, followers, reels:[{id,date,views,likes,comments,caption}]}. Claude can read them with tools/scrape_instagram.js (views need Instagram's /reels/ tab, which may be login-walled). Accounts with fewer than 4 reels that have views are ignored. YouTube channels do not go here: put their @handles in config.json competitors.youtube_handles.",
+  "accounts": []
+}
