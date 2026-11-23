@@ -4,17 +4,113 @@
   "handle": "how_does_it_work1",
   "followers": 764,
   "reels": [
-    {"id": "DgEYcB-NlBv", "date": "2026-11-22", "views": 3568,   "likes": 97,   "comments": 5,   "topic": "Kim Jong Un HUSS gym humor"},
-    {"id": "DgDeT7Ltk0H", "date": "2026-11-22", "views": 2658,   "likes": 121,  "comments": 18,  "topic": "Chudsterdam city naming / mansion giveaway"},
-    {"id": "DgAvC9ENVUV", "date": "2026-11-21", "views": 3247,   "likes": 76,   "comments": 24,  "topic": "City population = followers, name the city"},
-    {"id": "Df-NEEkNOQ8", "date": "2026-11-20", "views": 20100,  "likes": 310,  "comments": 7,   "topic": "GTA 6 Lucia shoulder touch"},
-    {"id": "Df6LpkUNjL1", "date": "2026-11-18", "views": 6601,   "likes": 140,  "comments": 5,   "topic": "LeBron honeypot spy"},
-    {"id": "Df54J03t8XS", "date": "2026-11-18", "views": 4502,   "likes": 98,   "comments": 9,   "topic": "Vape screen 'last ones'"},
-    {"id": "Df40AyFN7Qt", "date": "2026-11-18", "views": 41800,  "likes": 678,  "comments": 747, "topic": "Type @ third name down wedding (comment bait)"},
-    {"id": "Df3bXbVtcoD", "date": "2026-11-17", "views": 5146,   "likes": 76,   "comments": 7,   "topic": "Kim Jong Un sumo"},
-    {"id": "Df2Wmqjte3l", "date": "2026-11-17", "views": 379000, "likes": 3924, "comments": 47,  "topic": "Zyn gums roast"},
-    {"id": "Df1GfsFNuSB", "date": "2026-11-16", "views": 14300,  "likes": 261,  "comments": 9,   "topic": "Prime Megan Fox roommate POV"},
-    {"id": "DfyZgOMtlpR", "date": "2026-11-15", "views": 12900,  "likes": 182,  "comments": 11,  "topic": "Search history above heads"},
-    {"id": "Dfvwqd6tokU", "date": "2026-11-14", "views": 3645,   "likes": 77,   "comments": 9,   "topic": "Elizabeth Holmes / blood machine"}
+    {
+      "id": "DgEYcB-NlBv",
+      "date": "2026-11-22",
+      "views": 3568,
+      "likes": 97,
+      "comments": 5,
+      "topic": "Kim Jong Un HUSS gym humor",
+      "caption": "What if Kim Jong Un could HUSS? 😤🌊\n\nSend this to the friend who'd set off the Lunk Alarm.\n\n#kimjongun #huss #gymhumor #whatif #satire"
+    },
+    {
+      "id": "DgDeT7Ltk0H",
+      "date": "2026-11-22",
+      "views": 2658,
+      "likes": 121,
+      "comments": 18,
+      "topic": "Chudsterdam city naming / mansion giveaway",
+      "caption": "Our city has a name: Chudsterdam.\n@alexwhite5226 named it and gets the first mansion. Mansion #2 goes to the most-liked comment, and every like on this video is a coin in the city's treasury. Follow to get a house and citizenship.\n\n#3danimation #worldbuilding #citybuilder #interactive"
+    },
+    {
+      "id": "DgAvC9ENVUV",
+      "date": "2026-11-21",
+      "views": 3247,
+      "likes": 76,
+      "comments": 24,
+      "topic": "City population = followers, name the city",
+      "caption": "This city's population is our follower count.\nFollow and you get a house. Unfollow and we blow it up. Name the city in the comments: the most-liked name by Sunday wins (and the account gets renamed too).\n\n#3danimation #worldbuilding #citybuilder #interactive"
+    },
+    {
+      "id": "Df-NEEkNOQ8",
+      "date": "2026-11-20",
+      "views": 20100,
+      "likes": 310,
+      "comments": 7,
+      "topic": "GTA 6 Lucia shoulder touch",
+      "caption": "GTA 6 players when Lucia touches their shoulder 💀 Be honest, which one are you?\n\n#gta6 #gtavi #lucia #gaming #gamermemes"
+    },
+    {
+      "id": "Df6LpkUNjL1",
+      "date": "2026-11-18",
+      "views": 6601,
+      "likes": 140,
+      "comments": 5,
+      "topic": "LeBron honeypot spy",
+      "caption": "They told him to be a honeypot. He brought honey. 🍯\nWorst spy alive, best friend ever.\n\n#lebron #whatif #spy #funny #3danimation"
+    },
+    {
+      "id": "Df54J03t8XS",
+      "date": "2026-11-18",
+      "views": 4502,
+      "likes": 98,
+      "comments": 9,
+      "topic": "Vape screen 'last ones'",
+      "caption": "The screen shows juice and battery. It does not show how many \"last ones\" he's had. 🔋\n(Not an ad. Nicotine is addictive.)\n\n#howitworks #vape #explained #3danimation #sendthis"
+    },
+    {
+      "id": "Df40AyFN7Qt",
+      "date": "2026-11-18",
+      "views": 41800,
+      "likes": 678,
+      "comments": 747,
+      "topic": "Type @ third name down wedding (comment bait)",
+      "caption": "Type @ in the comments. Third name down. Congrats on the wedding. 💍\nNo refunds.\n\n#thirdat #wedding #relatable #genz #funny"
+    },
+    {
+      "id": "Df3bXbVtcoD",
+      "date": "2026-11-17",
+      "views": 5146,
+      "likes": 76,
+      "comments": 7,
+      "topic": "Kim Jong Un sumo",
+      "caption": "He'd be the smallest guy in the ring and still go 15 and 0. 🏆\n\nSend this to someone who'd let him win.\n\n#sumo #kimjongun #whatif #northkorea #funny"
+    },
+    {
+      "id": "Df2Wmqjte3l",
+      "date": "2026-11-17",
+      "views": 379000,
+      "likes": 3924,
+      "comments": 47,
+      "topic": "Zyn gums roast",
+      "caption": "His gums left no forwarding address. 📦\n\nSend this to the friend with 16 nicknames and 1 mm of gum line.\n\n#zyn #gums #dentist #roast #funny"
+    },
+    {
+      "id": "Df1GfsFNuSB",
+      "date": "2026-11-16",
+      "views": 14300,
+      "likes": 261,
+      "comments": 9,
+      "topic": "Prime Megan Fox roommate POV",
+      "caption": "POV: prime Megan Fox is your roommate and you misread every single thing she says 💀\n\n#roommate #downbad #whatif #animation #funny"
+    },
+    {
+      "id": "DfyZgOMtlpR",
+      "date": "2026-11-15",
+      "views": 12900,
+      "likes": 182,
+      "comments": 11,
+      "topic": "Search history above heads",
+      "caption": "In this world, your search history appears above your head 🔍\n\nThe groom: \"is it too late to back out.\" The bride: same search.\nHer dad: \"how to scare daughter's boyfriend.\"\nYour boss: \"how to fire someone nicely.\"\nYour mom: \"what is my son hiding.\"\n\nAnd nobody trusts the incognito guy.\n\nSend this to someone whose search history should never get out 👇\n\n#searchhistory #incognito #relatable #genzhumor #whatif #wedding #3danimation #funny"
+    },
+    {
+      "id": "Dfvwqd6tokU",
+      "date": "2026-11-14",
+      "views": 3645,
+      "likes": 77,
+      "comments": 9,
+      "topic": "Elizabeth Holmes / blood machine",
+      "caption": "The scariest thing at the foot of your bed wants one drop of blood 🩸👁️\n\nThe no-blinking part is real. So is the machine that never worked.\n\nSend this to the friend who'd still invest 👇\n\n#elizabethholmes #theranos #sleepparalysis #whatif #funfacts"
+    }
   ]
 }

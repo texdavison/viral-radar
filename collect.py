@@ -8,7 +8,10 @@ Standard library only, so it runs on any Python 3.9+ with no installs.
 
 Sources (each one is skipped cleanly if it fails or has no key):
   reddit         public hot.json for the subreddits in config.json
-  google_trends  Google Trends "trending now" RSS feed (US)
+  google_trends  Google Trends "trending now" RSS feed (US), plus GB/CA/AU as google_trends_intl
+  wikipedia      most-viewed Wikipedia articles, with day-over-day spike ratio (no key)
+  hackernews     Hacker News front page via Algolia (no key)
+  instagram_analysis  derived: outlier scores, rates and caption-feature lift from your own reels
   youtube        YouTube Data API v3: most-popular chart + fresh Shorts outliers
                  (needs YOUTUBE_API_KEY)
   instagram      Instagram Graph API: the account's own reels and their insights
@@ -23,6 +26,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import statistics
 import sys
 import time
 import urllib.error
@@ -152,9 +156,121 @@ def collect_google_trends(cfg: dict, errors: list) -> list[dict]:
         return []
 
 
+def collect_google_trends_intl(cfg: dict, us_rows: list[dict], errors: list) -> list[dict]:
+    """Trending searches in other English-speaking regions. Things trending abroad often reach the US
+    a day or two later. Rows already trending in the US are dropped."""
+    seen = {r["query"].lower() for r in us_rows}
+    out = []
+    for geo in cfg.get("extra_geos", ["GB", "CA", "AU"]):
+        try:
+            rows = parse_trends_rss(http_get("https://trends.google.com/trending/rss", {"geo": geo}))
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"google_trends {geo}: {e}")
+            continue
+        for r in rows[: cfg.get("intl_per_geo", 10)]:
+            if r["query"].lower() in seen:
+                continue
+            seen.add(r["query"].lower())
+            r["geo"] = geo
+            out.append(r)
+        time.sleep(0.5)
+    return out
+
+
+# ---------------------------------------------------------------- wikipedia
+
+WIKI_SKIP_PREFIXES = ("Special:", "Wikipedia:", "Portal:", "Help:", "Category:", "File:", "Talk:",
+                      "Template:", "User:")
+
+
+def parse_wiki_top(data: dict) -> list[dict]:
+    """Most-viewed English Wikipedia articles for one day, minus the Main Page and namespace pages."""
+    rows = []
+    for item in data.get("items", [])[:1]:
+        for a in item.get("articles", []):
+            title = a.get("article") or ""
+            if title in ("Main_Page", "-") or title.startswith(WIKI_SKIP_PREFIXES):
+                continue
+            rows.append({"title": title.replace("_", " "), "views": int(a.get("views") or 0),
+                         "rank": int(a.get("rank") or 0)})
+    return rows
+
+
+def collect_wikipedia(cfg: dict, errors: list) -> list[dict]:
+    """Wikipedia daily pageviews: what people suddenly want to understand. Free, no key.
+    Compares the latest full day to the day before to find what is spiking."""
+    if not cfg.get("enabled", True):
+        return []
+    base = "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access"
+    today = now_utc().date()
+    cur = prev = None
+    for back in (1, 2):  # yesterday's data is sometimes not published yet
+        d1, d0 = today - timedelta(days=back), today - timedelta(days=back + 1)
+        try:
+            cur = parse_wiki_top(http_json(f"{base}/{d1:%Y/%m/%d}"))
+            prev = parse_wiki_top(http_json(f"{base}/{d0:%Y/%m/%d}"))
+            break
+        except Exception as e:  # noqa: BLE001
+            last = e
+    if cur is None:
+        errors.append(f"wikipedia: {last}")
+        return []
+    prev_views = {r["title"]: r["views"] for r in prev}
+    floor_prev = min(prev_views.values(), default=1) or 1   # a page missing from yesterday's top list had at most this
+    min_views = cfg.get("min_views", 15000)
+    out = []
+    for r in cur:
+        if r["views"] < min_views:
+            continue
+        old = prev_views.get(r["title"])
+        r["prev_views"] = old
+        r["new_in_top"] = old is None
+        # For pages not in the previous list, views/floor is a conservative lower bound on the spike.
+        r["growth_x"] = round(r["views"] / (old or floor_prev), 2)
+        r["growth_is_lower_bound"] = old is None
+        r["url"] = "https://en.wikipedia.org/wiki/" + urllib.parse.quote(r["title"].replace(" ", "_"))
+        out.append(r)
+    out.sort(key=lambda r: (r["growth_x"], r["views"]), reverse=True)   # biggest spikes first
+    return out[: cfg.get("max_total", 40)]
+
+
+# ---------------------------------------------------------------- hacker news
+
+def parse_hn(data: dict, now_ts: float) -> list[dict]:
+    rows = []
+    for h in data.get("hits", []):
+        age_h = max(0.25, (now_ts - float(h.get("created_at_i") or now_ts)) / 3600)
+        pts = int(h.get("points") or 0)
+        rows.append({
+            "id": h.get("objectID"),
+            "title": clip(h.get("title"), 200),
+            "points": pts,
+            "comments": int(h.get("num_comments") or 0),
+            "age_hours": round(age_h, 1),
+            "velocity": round(pts / age_h, 1),
+            "url": h.get("url") or "",
+            "discussion": f"https://news.ycombinator.com/item?id={h.get('objectID')}",
+        })
+    return rows
+
+
+def collect_hackernews(cfg: dict, errors: list) -> list[dict]:
+    """Hacker News front page. Skews tech, but 'how X works' stories do well there. Free, no key."""
+    if not cfg.get("enabled", True):
+        return []
+    try:
+        data = http_json("https://hn.algolia.com/api/v1/search", {"tags": "front_page", "hitsPerPage": 40})
+    except Exception as e:  # noqa: BLE001
+        errors.append(f"hackernews: {e}")
+        return []
+    rows = [r for r in parse_hn(data, time.time()) if r["points"] >= cfg.get("min_points", 50)]
+    rows.sort(key=lambda r: r["velocity"], reverse=True)
+    return rows[: cfg.get("max_total", 20)]
+
+
 # ---------------------------------------------------------------- youtube
 
-YT = "https://www.googleapis.com/youtube/v3"
+YT ="https://www.googleapis.com/youtube/v3"
 
 
 def _yt_video(v: dict, now: datetime) -> dict:
@@ -265,7 +381,7 @@ def load_manual_instagram(errors: list) -> dict | None:
     for r in data.get("reels", []):
         posts.append({
             "id": r.get("id"),
-            "caption": clip(r.get("topic") or r.get("caption"), 200),
+            "caption": clip(r.get("caption") or r.get("topic"), 700),  # long enough to keep the hashtags
             "type": "REELS",
             "permalink": f"https://www.instagram.com/{handle}/reel/{r.get('id')}/",
             "posted_at": r.get("date"),
@@ -324,12 +440,87 @@ def collect_instagram(cfg: dict, errors: list) -> dict:
     return {"posts": posts}
 
 
+# ---------------------------------------------------------------- learn from your own reels
+
+CAPTION_FEATURES = {
+    "send_this_cta": lambda c: "send this" in c,
+    "type_at_cta": lambda c: "type @" in c,
+    "follow_or_name_ask": lambda c: "follow" in c or "name the" in c,
+    "what_if": lambda c: "what if" in c or "#whatif" in c,
+    "pov": lambda c: c.startswith("pov") or " pov:" in c,
+    "question_in_hook": lambda c: "?" in c.split("\n")[0],
+}
+
+
+def _median(xs: list[float]) -> float | None:
+    return round(statistics.median(xs), 1) if xs else None
+
+
+def analyze_instagram(ig: dict) -> dict | None:
+    """Turn the account's own reels into 'what worked' stats so ideas can be scored against real results.
+    Uses only likes/comments/views, so it works for both the manual file and the API path."""
+    posts = [p for p in ig.get("posts", []) if p.get("views")]
+    if len(posts) < 3:
+        return None
+    followers = ig.get("followers")
+    views = [p["views"] for p in posts]
+    med = statistics.median(views)
+    rows = []
+    for p in posts:
+        v = p["views"]
+        row = {
+            "id": p["id"], "views": v,
+            "outlier_x": round(v / med, 1),                       # views vs this account's median reel
+            "like_rate_pct": round(100 * (p.get("likes") or 0) / v, 2),
+            "comment_rate_pct": round(100 * (p.get("comments") or 0) / v, 2),
+        }
+        if followers:
+            row["views_per_follower"] = round(v / followers, 1)
+        rows.append(row)
+    rows.sort(key=lambda r: r["views"], reverse=True)
+
+    by_id = {p["id"]: p for p in posts}
+    features = {}
+    for name, test in CAPTION_FEATURES.items():
+        yes = [p["views"] for p in posts if test((p.get("caption") or "").lower())]
+        no = [p["views"] for p in posts if not test((p.get("caption") or "").lower())]
+        if len(yes) >= 2 and len(no) >= 2:   # a single reel proves nothing, so no lift number for it
+            features[name] = {"n_with": len(yes), "median_views_with": _median(yes),
+                              "n_without": len(no), "median_views_without": _median(no),
+                              "lift_x": round(statistics.median(yes) / statistics.median(no), 2)}
+    tag_views: dict[str, list[int]] = {}
+    for p in posts:
+        for tag in {t.lower().strip(".,!") for t in (p.get("caption") or "").split() if t.startswith("#")}:
+            tag_views.setdefault(tag, []).append(p["views"])
+    hashtags = sorted(({"tag": t, "n": len(v), "median_views": _median(v)} for t, v in tag_views.items() if len(v) >= 2),
+                      key=lambda r: r["median_views"], reverse=True)
+    best_comment = max(rows, key=lambda r: r["comment_rate_pct"])
+    return {
+        "sample_size": len(posts),
+        "caveat": "small sample: treat as directional, not proof" if len(posts) < 30 else None,
+        "median_views": round(med), "mean_views": round(statistics.mean(views)),
+        "winners": [r["id"] for r in rows if r["outlier_x"] >= 2],
+        "flops": [r["id"] for r in rows if r["outlier_x"] <= 0.5],
+        "best_comment_rate": {"id": best_comment["id"], "pct": best_comment["comment_rate_pct"],
+                              "caption": clip(by_id[best_comment["id"]].get("caption"), 120)},
+        "per_reel": rows,
+        "caption_features": features,
+        "hashtags": hashtags[:10],
+    }
+
+
 # ---------------------------------------------------------------- momentum vs last run
 
 def add_momentum(current: dict, previous: dict | None) -> None:
     """Mark what's new or climbing since the previous snapshot."""
     if not previous:
         return
+    prev_wiki = {r["title"] for r in previous.get("wikipedia", [])}
+    for r in current.get("wikipedia", []):
+        r["new_since_last_run"] = r["title"] not in prev_wiki
+    prev_hn = {r["id"] for r in previous.get("hackernews", [])}
+    for r in current.get("hackernews", []):
+        r["new_since_last_run"] = r["id"] not in prev_hn
     prev_reddit = {p["id"]: p for p in previous.get("reddit", []) if p.get("id")}
     for p in current.get("reddit", []):
         old = prev_reddit.get(p["id"])
@@ -367,6 +558,13 @@ def main() -> int:
         "youtube": collect_youtube(cfg.get("youtube", {}), errors),
         "instagram": collect_instagram(cfg.get("instagram", {}), errors),
     }
+    # Additive sources (new keys only; existing keys above are unchanged).
+    signals["google_trends_intl"] = collect_google_trends_intl(cfg.get("google_trends", {}), signals["google_trends"], errors)
+    signals["wikipedia"] = collect_wikipedia(cfg.get("wikipedia", {}), errors)
+    signals["hackernews"] = collect_hackernews(cfg.get("hackernews", {}), errors)
+    analysis = analyze_instagram(signals["instagram"])
+    if analysis:
+        signals["instagram_analysis"] = analysis
     latest = SIGNALS / "latest.json"
     previous = None
     if latest.exists():
@@ -381,7 +579,9 @@ def main() -> int:
     yt = signals["youtube"]
     summary = (f"reddit={len(signals['reddit'])} trends={len(signals['google_trends'])} "
                f"yt_popular={len(yt.get('popular', []))} yt_shorts={len(yt.get('shorts', []))} "
-               f"ig_posts={len(signals['instagram'].get('posts', []))} errors={len(errors)}")
+               f"ig_posts={len(signals['instagram'].get('posts', []))} "
+               f"trends_intl={len(signals['google_trends_intl'])} wiki={len(signals['wikipedia'])} "
+               f"hn={len(signals['hackernews'])} ig_analysis={'yes' if analysis else 'no'} errors={len(errors)}")
     print(summary)
     for e in errors:
         print("  !", e)

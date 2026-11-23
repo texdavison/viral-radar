@@ -5,7 +5,19 @@
     "max_total": 60
   },
   "google_trends": {
-    "geo": "US"
+    "geo": "US",
+    "extra_geos": ["GB", "CA", "AU"],
+    "intl_per_geo": 10
+  },
+  "wikipedia": {
+    "enabled": true,
+    "min_views": 15000,
+    "max_total": 40
+  },
+  "hackernews": {
+    "enabled": true,
+    "min_points": 50,
+    "max_total": 20
   },
   "youtube": {
     "region": "US",

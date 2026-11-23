@@ -9,7 +9,11 @@ Viral Idea Radar dashboard (https://claude.ai/artifact/98fJKAJz1xUpqrpcQ9TxKo).
 - `collect.py`: standard-library Python. Sources: Reddit hot posts (upvotes/hour), Google Trends
   "trending now" RSS, YouTube most-popular plus fresh Shorts outliers (needs `YOUTUBE_API_KEY`),
   and the account's own Instagram reels with insights (needs `IG_ACCESS_TOKEN` and `IG_USER_ID`).
+  Also (no keys needed): Wikipedia day-over-day pageview spikes, Hacker News front page, Google Trends
+  for GB/CA/AU not yet trending in the US (`google_trends_intl`), and `instagram_analysis` (outlier scores,
+  rates and caption-trait lift computed from the account's own reels).
   Every source is optional and fails soft; errors are listed in `signals/latest.json`.
+  The cloud scan needs `CLOUD_SCAN_ADDENDUM.md` pasted into its instructions to use the new keys.
 - `config.json`: subreddits, YouTube keywords and categories, Instagram API settings. Edit freely.
 - `run.ps1`: pull, collect, commit `signals/`, push. Writes `last-run.log`.
 - `.env.example`: copy to `.env` for keys. `.env` is gitignored and must never be committed.
