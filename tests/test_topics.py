@@ -48,6 +48,19 @@ class TopicTests(unittest.TestCase):
         self.assertEqual(cl[0]["source_count"], 2)
         self.assertIn("politics_war", T.risk_flags(cl[0]))
 
+    def test_generic_searches_do_not_become_topics(self):
+        sig = {"google_trends": [trend("maps"), trend("stock market today"), trend("weather")],
+               "hackernews": [{"title": "Drone Maps of Salvage Yards", "points": 99, "discussion": "hn"}]}
+        self.assertEqual(T.build_clusters(sig), [])
+
+    def test_label_is_the_most_mentioned_subject(self):
+        sig = {"google_trends": [trend("market wrap", "50K+", [
+                   {"title": "Jensen Huang return fades", "url": "a"}, {"title": "Jensen Huang slides again", "url": "b"}])],
+               "wikipedia": [{"title": "Jensen Huang", "views": 90000, "growth_x": 4, "url": "w"}]}
+        cl = T.build_clusters(sig)
+        self.assertEqual(len(cl), 1)
+        self.assertEqual(cl[0]["label"], "Jensen Huang")
+
     def test_unrelated_topics_stay_separate(self):
         sig = {"google_trends": [trend("taylor swift"), trend("nfl scores")], "wikipedia": []}
         self.assertEqual(len(T.build_clusters(sig)), 2)

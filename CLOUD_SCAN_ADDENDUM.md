@@ -66,5 +66,27 @@ IDEA PACKAGE: for each of the top ideas (up to 5 per scan), write a ready-to-sho
   - risk: the risk_flags and how the package handles them, or "none".
   - confidence: low | medium | high, honestly lower when the evidence is a single source, history is thin,
     or competition is unchecked.
-Write the package into the idea's record on the dashboard alongside the existing fields.
+
+WHERE TO WRITE IT (the dashboard already renders these fields, so use them):
+  ideas (one doc per idea; keep every existing field the same way as before):
+    - title, hook (use your strongest hook variant), format, niche, scores, total as before.
+    - script: the 5 beats as an array of strings.  caption: the caption with hashtags.  comment_bait: the CTA line.
+    - why_now: one or two sentences that include the evidence, e.g. "Rising on Trends US + Hacker News (2
+      sources); 2 Shorts above 10K in 48h, so it's still open."
+    - window: a short tag from the topic's lifecycle (e.g. "Rising: post in 12-24h", "Peaking: needs a fresh angle").
+    - fact_check: array of strings. Put each risk flag here as "Risk: <flag> - <how the idea handles it>", plus any
+      factual claims to verify. The dashboard shows this as "Check before posting".
+    - sources: [{title, url}] built from the topic's evidence links.
+    - NEW optional fields (the page ignores them for now, but keep them for later): hook_variants (array of the
+      3 hooks), confidence ("low|medium|high"), lifecycle, source_count, saturation (label or "unchecked").
+  trends (one doc per topic; upsert by topic name):
+    - name = topic, niche, evidence = "<N> sources: <list>; <saturation>", url = best evidence link,
+      last_seen = now (ISO).
+    - heat = min(10, round(topic.heat)) (an integer 0-10).
+    - momentum = "rising" or "peaking" or "fading" from the lifecycle. Map "emerging" to "rising" and add the word
+      "new" to evidence.
+  runs (the doc for this scan):
+    - competitor_notes: for each competitor_outliers entry [{source: account, url, what: its hook, why: "Nx its
+      account's median"}], or leave it as before when competitor_outliers is absent.
+    - near_misses as before.
 ```

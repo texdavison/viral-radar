@@ -20,7 +20,13 @@ STOP = set("""a an and are as at be but by for from has have he her his how i if
 she so than that the their them they this to up us was we were what when where which who why will with you your vs
 new news live latest today tonight""".split())
 
-SOURCE_LABELS = {"google_trends": "Google Trends (US)", "google_trends_intl": "Google Trends (GB/CA/AU)",
+# Everyday words that make a trend a generic search ("maps", "stock market today") rather than a subject.
+# They are ignored when matching, so a query made only of them never becomes a topic.
+STOP |= set("""maps map weather stock stocks market markets price prices score scores game games video videos
+movie movies show shows season episode update updates release date time times near best top free online watch
+review reviews versus results result schedule tickets ticket deal deals sale sales news""".split())
+
+SOURCE_LABELS ={"google_trends": "Google Trends (US)", "google_trends_intl": "Google Trends (GB/CA/AU)",
                  "wikipedia": "Wikipedia", "hackernews": "Hacker News", "reddit": "Reddit", "youtube": "YouTube"}
 
 RISK_WORDS = {
@@ -166,7 +172,12 @@ def build_clusters(signals: dict) -> list[dict]:
     clusters = []
     prio = {"google_trends": 0, "google_trends_intl": 1, "wikipedia": 2}
     for members in groups.values():
-        members.sort(key=lambda s: (prio[s["source"]], -s["metric"]))
+        # Name the topic after the subject mentioned most across the cluster (not just the first trend),
+        # so a news story about "Jensen Huang" isn't labelled with whatever generic search it came from.
+        texts = [set(tokens(s["label"])) for s in members] + \
+                [h["toks"] for s in members for h in attached.get(s["i"], []) + [x for x in hay if x.get("parent") == s["i"]]]
+        coverage = {s["i"]: sum(1 for t in texts if matches(s["toks"], t)) for s in members}
+        members.sort(key=lambda s: (-coverage[s["i"]], prio[s["source"]], -s["metric"]))
         ev, seen = [], set()
         sources = {s["source"] for s in members}
         metrics: dict[str, float] = {}
