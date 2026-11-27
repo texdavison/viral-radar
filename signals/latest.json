@@ -1,21 +1,57 @@
 {
- "generated_at": "2026-11-27T14:50:45Z",
+ "generated_at": "2026-11-27T15:11:27Z",
  "reddit": [],
  "google_trends": [
   {
+   "query": "law",
+   "approx_traffic": "1000+",
+   "started": "Fri, 27 Nov 2026 06:50:00 -0800",
+   "news": [
+    {
+     "title": "In Canada, Quebec’s religious symbols ban faces a Supreme Court test",
+     "source": "Al Jazeera",
+     "url": "https://www.aljazeera.com/features/2026/11/26/in-canada-quebecs-religious-symbols-ban-faces-a-supreme-court-test"
+    },
+    {
+     "title": "Canada's Supreme Court to rule on Quebec's law on religious symbols in test of Canadian unity",
+     "source": "Reuters",
+     "url": "https://www.reuters.com/legal/government/canadas-supreme-court-rule-quebecs-law-religious-symbols-test-canadian-unity-2026-11-27/"
+    }
+   ],
+   "new_since_last_run": true
+  },
+  {
+   "query": "al qadsiah vs al-fayha",
+   "approx_traffic": "200+",
+   "started": "Fri, 27 Nov 2026 06:30:00 -0800",
+   "news": [
+    {
+     "title": "Al Qadsiah vs Al-Fayha Preview and Betting Tips",
+     "source": "Football.com",
+     "url": "https://www.football.com/ng/news/158760"
+    },
+    {
+     "title": "Al Qadsiah vs Al-Fayha: Where to Watch, TV Channel, Live Stream and Kick-Off Time",
+     "source": "Goal.com",
+     "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-al-qadsiah-v-al-fayha/bltbaef372bfb5e5570"
+    }
+   ],
+   "new_since_last_run": true
+  },
+  {
    "query": "hackers breach air force",
-   "approx_traffic": "2000+",
+   "approx_traffic": "5000+",
    "started": "Fri, 27 Nov 2026 06:20:00 -0800",
    "news": [
+    {
+     "title": "EXCLUSIVE: Hackers breach US Air Force flagship Cloud One computing platform",
+     "source": "Reuters",
+     "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/"
+    },
     {
      "title": "Hackers break into US Air Force cloud computing platform: Report",
      "source": "The Hill",
      "url": "https://thehill.com/policy/defense/6245197-air-force-cloud-one-hack/"
-    },
-    {
-     "title": "Hackers breach US Air Force flagship Cloud One computing platform",
-     "source": "Military Times",
-     "url": "https://www.militarytimes.com/news/your-military/2026/11/27/hackers-breach-us-air-force-flagship-cloud-one-computing-platform/"
     }
    ],
    "new_since_last_run": false
@@ -49,12 +85,30 @@
      "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/kelly-ripas-lookalike-daughter-twins-101542342.html"
     },
     {
-     "title": "Kelly Ripa Shows Yacht Style as Daughter Lola Matches Boyfriend",
-     "source": "Limapagi",
-     "url": "https://www.limapagi.id/en/kelly-ripa-lola-fashion-style"
+     "title": "Kelly Ripa Shows Nautical Style as Lola Coordinates Couple Looks",
+     "source": "Peradaban.id",
+     "url": "https://peradaban.id/en/kelly-ripa-lola-fashion-appearances"
     }
    ],
    "new_since_last_run": false
+  },
+  {
+   "query": "princess cruises",
+   "approx_traffic": "200+",
+   "started": "Fri, 27 Nov 2026 06:00:00 -0800",
+   "news": [
+    {
+     "title": "Cruise ship returns to Fort Lauderdale with nearly 150 sick passengers, crew members after 12-day journey",
+     "source": "CBS News",
+     "url": "https://www.cbsnews.com/miami/news/princess-cruises-caribbean-princess-sick-passengers-fort-lauderdale-november-2026/"
+    },
+    {
+     "title": "Vomiting and Diarrhea Sweep Through Cruise Ship, Sickening Nearly 150 People",
+     "source": "Fodors Travel Guide",
+     "url": "https://www.fodors.com/news/photos/vomiting-and-diarrhea-sweep-through-cruise-ship-sickening-nearly-150-people"
+    }
+   ],
+   "new_since_last_run": true
   },
   {
    "query": "delcy rodríguez",
@@ -85,9 +139,9 @@
      "url": "https://www.pgatour.com/article/news/latest/2026/11/24/the-farmers-insurance-skins-game-black-friday-amazon-prime-video-brooks-koepka-jackson-koivun-wyndham-clark-justin-thomas"
     },
     {
-     "title": "2026 Skins Game primer: Format, schedule, players and more",
-     "source": "GOLF.com",
-     "url": "https://golf.com/news/2026-skins-game-primer-format-schedule-players-and-more/"
+     "title": "How to watch the 2026 The Farmers Insurance Skins Game: Streaming options for Round 1 - The Athletic",
+     "source": "The New York Times",
+     "url": "https://www.nytimes.com/athletic/7815628/2026/11/26/the-farmers-insurance-skins-game-stream-how-to-watch-nov-27/"
     }
    ],
    "new_since_last_run": false
@@ -127,60 +181,6 @@
     }
    ],
    "new_since_last_run": false
-  },
-  {
-   "query": "iowa vs nebraska",
-   "approx_traffic": "500+",
-   "started": "Fri, 27 Nov 2026 05:40:00 -0800",
-   "news": [
-    {
-     "title": "Nebraska-Iowa: What we're looking for and final predictions",
-     "source": "247Sports",
-     "url": "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-football-iowa-hawkeyes-football-predictions-keys-to-the-game-picks-to-click-293336948/"
-    },
-    {
-     "title": "Iowa vs. Nebraska odds, prediction, time: Rivalry Week Friday picks from proven model",
-     "source": "CBS Sports",
-     "url": "https://www.cbssports.com/betting/news/iowa-nebraska-odds-prediction-time-2026-rivalry-week-college-football-friday-picks/"
-    }
-   ],
-   "new_since_last_run": false
-  },
-  {
-   "query": "cardi b",
-   "approx_traffic": "200+",
-   "started": "Fri, 27 Nov 2026 05:40:00 -0800",
-   "news": [
-    {
-     "title": "Cardi B and Offset See Beverly Hills Mansion Lawsuit Dismissed After Settlement",
-     "source": "Rolling Stone",
-     "url": "https://www.rollingstone.com/music/music-news/cardi-b-offset-beverly-hills-mansion-lawsuit-settlement-1235664297/"
-    },
-    {
-     "title": "When Cardi B was trying to show the cameras their new mansion, but Offset couldn’t keep his hands off her",
-     "source": "NewsBreak: Local News & Alerts",
-     "url": "https://www.newsbreak.com/the-happiness-delivery-323615495/5007944196429-when-cardi-b-was-trying-to-show-the-cameras-their-new-mansion-but-offset-couldn-t-keep-his-hands-off-her"
-    }
-   ],
-   "new_since_last_run": false
-  },
-  {
-   "query": "gma deals and steals",
-   "approx_traffic": "2000+",
-   "started": "Fri, 27 Nov 2026 05:30:00 -0800",
-   "news": [
-    {
-     "title": "'GMA' Deals & Steals for Black Friday",
-     "source": "ABC News - Breaking News, Latest News and Videos",
-     "url": "https://abcnews.com/GMA/Shop/gma-deals-steals-black-friday/story?id=138385185"
-    },
-    {
-     "title": "'GMA' Deals & Steals: Holiday gifts with free shipping",
-     "source": "Yahoo",
-     "url": "https://www.yahoo.com/news/videos/gma-deals-steals-holiday-gifts-083537512.html"
-    }
-   ],
-   "new_since_last_run": false
   }
  ],
  "youtube": {
@@ -190,10 +190,10 @@
     "title": "Yamal & Olise Laughed Too Early... Haaland’s Surprise 🍓😂",
     "channel": "GOATZVERSE",
     "published": "2026-11-25T11:48:04Z",
-    "views": 114125631,
+    "views": 114319591,
     "likes": 0,
-    "comments": 1716,
-    "views_per_hour": 2235784,
+    "comments": 1719,
+    "views_per_hour": 2224548,
     "url": "https://www.youtube.com/watch?v=wJ-A54rpHr0",
     "category": 17
    },
@@ -202,10 +202,10 @@
     "title": "Teaching my GF how to dive 🤣😭",
     "channel": "Cadel and Mia",
     "published": "2026-11-25T09:45:19Z",
-    "views": 94062236,
-    "likes": 395537,
-    "comments": 962,
-    "views_per_hour": 1771722,
+    "views": 94084346,
+    "likes": 395547,
+    "comments": 963,
+    "views_per_hour": 1760697,
     "url": "https://www.youtube.com/watch?v=jU6cUtK_hGk",
     "category": 24
    },
@@ -214,10 +214,10 @@
     "title": "Teaching my GF how to dive 🤣😭",
     "channel": "Cadel and Mia",
     "published": "2026-11-25T09:45:19Z",
-    "views": 94062236,
-    "likes": 395537,
-    "comments": 962,
-    "views_per_hour": 1771722,
+    "views": 94084346,
+    "likes": 395547,
+    "comments": 963,
+    "views_per_hour": 1760697,
     "url": "https://www.youtube.com/watch?v=jU6cUtK_hGk",
     "category": 23
    },
@@ -226,10 +226,10 @@
     "title": "Avengers: Doomsday | Final Trailer | In Theaters December 18",
     "channel": "Marvel Entertainment",
     "published": "2026-11-23T14:00:01Z",
-    "views": 63900382,
-    "likes": 1687647,
-    "comments": 96766,
-    "views_per_hour": 659815,
+    "views": 63976757,
+    "likes": 1688206,
+    "comments": 96785,
+    "views_per_hour": 658259,
     "url": "https://www.youtube.com/watch?v=Wb8Tq_HD4E8",
     "category": 24
    },
@@ -238,10 +238,10 @@
     "title": "Mom Surprised Him With GTA 6 😱",
     "channel": "SpinFactz",
     "published": "2026-11-22T13:00:23Z",
-    "views": 77485960,
-    "likes": 1134651,
-    "comments": 6418,
-    "views_per_hour": 635966,
+    "views": 77547083,
+    "likes": 1135667,
+    "comments": 6425,
+    "views_per_hour": 634671,
     "url": "https://www.youtube.com/watch?v=TXYkiIRMzH8",
     "category": 23
    },
@@ -250,10 +250,10 @@
     "title": "Well we know what time it is 😂 #funny",
     "channel": "No Tatts",
     "published": "2026-11-24T17:00:30Z",
-    "views": 36194295,
-    "likes": 638922,
-    "comments": 9542,
-    "views_per_hour": 518262,
+    "views": 36208842,
+    "likes": 639079,
+    "comments": 9545,
+    "views_per_hour": 515922,
     "url": "https://www.youtube.com/watch?v=W_cuX6leGak",
     "category": 24
    },
@@ -262,10 +262,10 @@
     "title": "This Man Is Incredibly Calm 😳",
     "channel": "On Camera Motion",
     "published": "2026-11-25T21:10:21Z",
-    "views": 15196546,
-    "likes": 226617,
-    "comments": 1786,
-    "views_per_hour": 364656,
+    "views": 15537997,
+    "likes": 230275,
+    "comments": 1813,
+    "views_per_hour": 369788,
     "url": "https://www.youtube.com/watch?v=3cTdimJGm8w",
     "category": 24
    },
@@ -274,10 +274,10 @@
     "title": "She was NOT a Subject 😭🥀 #funny #memes #shorts",
     "channel": "Mivzo",
     "published": "2026-11-25T21:04:56Z",
-    "views": 13794770,
-    "likes": 295013,
-    "comments": 1185,
-    "views_per_hour": 330304,
+    "views": 13822674,
+    "likes": 295551,
+    "comments": 1186,
+    "views_per_hour": 328260,
     "url": "https://www.youtube.com/watch?v=UW4W9jaJq20",
     "category": 24
    },
@@ -286,23 +286,11 @@
     "title": "When A Stranger's Advice Meant More Than He Realized",
     "channel": "Havoc Cams",
     "published": "2026-11-25T14:20:24Z",
-    "views": 13760722,
-    "likes": 338508,
-    "comments": 1283,
-    "views_per_hour": 283690,
+    "views": 13828744,
+    "likes": 340417,
+    "comments": 1289,
+    "views_per_hour": 283079,
     "url": "https://www.youtube.com/watch?v=YqRRVu4SPFI",
-    "category": 24
-   },
-   {
-    "id": "7o9Al07wa6M",
-    "title": "Bro 😭",
-    "channel": "Stewie",
-    "published": "2026-11-24T01:30:01Z",
-    "views": 21301211,
-    "likes": 0,
-    "comments": 8153,
-    "views_per_hour": 249587,
-    "url": "https://www.youtube.com/watch?v=7o9Al07wa6M",
     "category": 24
    },
    {
@@ -310,22 +298,34 @@
     "title": "send this to that friend 🫩",
     "channel": "Carter Folian",
     "published": "2026-11-26T23:31:05Z",
-    "views": 3824176,
-    "likes": 130421,
-    "comments": 658,
-    "views_per_hour": 249488,
+    "views": 3927983,
+    "likes": 133568,
+    "comments": 667,
+    "views_per_hour": 250620,
     "url": "https://www.youtube.com/watch?v=3ITB8QRpHok",
     "category": 23
+   },
+   {
+    "id": "7o9Al07wa6M",
+    "title": "Bro 😭",
+    "channel": "Stewie",
+    "published": "2026-11-24T01:30:01Z",
+    "views": 21307825,
+    "likes": 0,
+    "comments": 8153,
+    "views_per_hour": 248659,
+    "url": "https://www.youtube.com/watch?v=7o9Al07wa6M",
+    "category": 24
    },
    {
     "id": "Zca-eKzSBvE",
     "title": "Nobody's taking my dog. 😂😅",
     "channel": "Tale Talker",
     "published": "2026-11-25T14:15:14Z",
-    "views": 11546234,
-    "likes": 277886,
-    "comments": 972,
-    "views_per_hour": 237615,
+    "views": 11548672,
+    "likes": 277975,
+    "comments": 973,
+    "views_per_hour": 235989,
     "url": "https://www.youtube.com/watch?v=Zca-eKzSBvE",
     "category": 23
    },
@@ -334,10 +334,10 @@
     "title": "POV : Jesus Forgetting His Own Strength",
     "channel": "Srg Camo",
     "published": "2026-11-26T11:02:02Z",
-    "views": 6537706,
-    "likes": 157210,
-    "comments": 1734,
-    "views_per_hour": 235066,
+    "views": 6573609,
+    "likes": 158007,
+    "comments": 1743,
+    "views_per_hour": 233461,
     "url": "https://www.youtube.com/watch?v=chaO6zdUs-c",
     "category": 24
    },
@@ -346,10 +346,10 @@
     "title": "Steph Curry didn't let that happen 👏❤️",
     "channel": "GD's Highlights",
     "published": "2026-11-24T16:01:17Z",
-    "views": 15745369,
-    "likes": 249965,
-    "comments": 1765,
-    "views_per_hour": 222315,
+    "views": 15856336,
+    "likes": 251499,
+    "comments": 1778,
+    "views_per_hour": 222796,
     "url": "https://www.youtube.com/watch?v=rWhXk94GwU0",
     "category": 17
    },
@@ -358,10 +358,10 @@
     "title": "Togi plays GTA6 🎮 #togi",
     "channel": "TogiToon ",
     "published": "2026-11-24T20:31:37Z",
-    "views": 14607986,
-    "likes": 234521,
-    "comments": 1053,
-    "views_per_hour": 220268,
+    "views": 14644375,
+    "likes": 235058,
+    "comments": 1054,
+    "views_per_hour": 219674,
     "url": "https://www.youtube.com/watch?v=wPgZXwW_dhI",
     "category": 24
    },
@@ -370,10 +370,10 @@
     "title": "Francis did NOT hold back💀",
     "channel": "Nick Wilkins",
     "published": "2026-11-23T02:16:39Z",
-    "views": 23515295,
-    "likes": 247074,
-    "comments": 1602,
-    "views_per_hour": 216594,
+    "views": 23519536,
+    "likes": 247124,
+    "comments": 1601,
+    "views_per_hour": 215947,
     "url": "https://www.youtube.com/watch?v=FL0UZKpytSk",
     "category": 24
    },
@@ -382,10 +382,10 @@
     "title": "Bro really waited for him to start walking 😭✌️",
     "channel": "MemeTweaker",
     "published": "2026-11-22T22:00:05Z",
-    "views": 23561023,
-    "likes": 485809,
+    "views": 23566679,
+    "likes": 486004,
     "comments": 1099,
-    "views_per_hour": 208792,
+    "views_per_hour": 208205,
     "url": "https://www.youtube.com/watch?v=2QMDnzyTj_4",
     "category": 23
    },
@@ -394,10 +394,10 @@
     "title": "Bro Should've Left That Monkey Alone 🥀😭",
     "channel": "Zplunk",
     "published": "2026-11-24T20:21:16Z",
-    "views": 12748162,
-    "likes": 228552,
+    "views": 12748646,
+    "likes": 228562,
     "comments": 3863,
-    "views_per_hour": 191726,
+    "views_per_hour": 190743,
     "url": "https://www.youtube.com/watch?v=buFW6Qbk0Cw",
     "category": 23
    },
@@ -406,10 +406,10 @@
     "title": "Absolutely NOTHING could've prepared me for the ending",
     "channel": "Mi Desing",
     "published": "2026-11-24T20:30:01Z",
-    "views": 12685096,
-    "likes": 293671,
-    "comments": 2563,
-    "views_per_hour": 191197,
+    "views": 12707531,
+    "likes": 294192,
+    "comments": 2568,
+    "views_per_hour": 190544,
     "url": "https://www.youtube.com/watch?v=DLDXQCLDGgE",
     "category": 23
    },
@@ -418,10 +418,10 @@
     "title": "This Couch Transforms In Seconds",
     "channel": "Clip Rotter",
     "published": "2026-11-24T00:20:18Z",
-    "views": 15463651,
-    "likes": 219154,
-    "comments": 1281,
-    "views_per_hour": 178754,
+    "views": 15520273,
+    "likes": 220242,
+    "comments": 1288,
+    "views_per_hour": 178696,
     "url": "https://www.youtube.com/watch?v=6_O342MeWEg",
     "category": 24
    },
@@ -430,10 +430,10 @@
     "title": "#naofloppa",
     "channel": "qrk9",
     "published": "2026-11-26T11:00:33Z",
-    "views": 4858744,
-    "likes": 80307,
-    "comments": 1230,
-    "views_per_hour": 174543,
+    "views": 4872335,
+    "likes": 80525,
+    "comments": 1234,
+    "views_per_hour": 172888,
     "url": "https://www.youtube.com/watch?v=4TislAds8xg",
     "category": 23
    },
@@ -442,10 +442,10 @@
     "title": "Philadelphia Eagles vs. Dallas Cowboys Thanksgiving Day Game Highlights | 2026 NFL Season Week 12",
     "channel": "NFL",
     "published": "2026-11-27T01:51:16Z",
-    "views": 2171480,
-    "likes": 25234,
-    "comments": 4912,
-    "views_per_hour": 167144,
+    "views": 2199667,
+    "likes": 25565,
+    "comments": 4960,
+    "views_per_hour": 164934,
     "url": "https://www.youtube.com/watch?v=jXmdND-z0_8",
     "category": 17
    },
@@ -454,10 +454,10 @@
     "title": "The Most Dramatic Speech In The Office🎄😭",
     "channel": "Tom Cuts",
     "published": "2026-11-25T02:15:18Z",
-    "views": 9719167,
-    "likes": 314573,
-    "comments": 1333,
-    "views_per_hour": 160406,
+    "views": 9738843,
+    "likes": 315128,
+    "comments": 1334,
+    "views_per_hour": 159820,
     "url": "https://www.youtube.com/watch?v=CV0mkRyaVtg",
     "category": 24
    },
@@ -466,10 +466,10 @@
     "title": "The Most Dramatic Speech In The Office🎄😭",
     "channel": "Tom Cuts",
     "published": "2026-11-25T02:15:18Z",
-    "views": 9719167,
-    "likes": 314573,
-    "comments": 1333,
-    "views_per_hour": 160406,
+    "views": 9738843,
+    "likes": 315128,
+    "comments": 1334,
+    "views_per_hour": 159820,
     "url": "https://www.youtube.com/watch?v=CV0mkRyaVtg",
     "category": 23
    },
@@ -478,10 +478,10 @@
     "title": "He is on Another Level.🔥#edit #shorts #foryou",
     "channel": "JJ_EditZ",
     "published": "2026-11-22T11:16:13Z",
-    "views": 18441464,
-    "likes": 863880,
-    "comments": 1644,
-    "views_per_hour": 149232,
+    "views": 18446465,
+    "likes": 864191,
+    "comments": 1646,
+    "views_per_hour": 148857,
     "url": "https://www.youtube.com/watch?v=aCqDrqDTfoQ",
     "category": 23
    },
@@ -490,10 +490,10 @@
     "title": "His Dad is in GTA VI #shorts",
     "channel": "Mae Bloom",
     "published": "2026-11-22T16:45:11Z",
-    "views": 17334878,
-    "likes": 339365,
+    "views": 17344730,
+    "likes": 339336,
     "comments": 732,
-    "views_per_hour": 146790,
+    "views_per_hour": 146446,
     "url": "https://www.youtube.com/watch?v=1mjvKEdq25Y",
     "category": 23
    },
@@ -502,10 +502,10 @@
     "title": "I couldn't even afford him a white T-shirt. He loved me anyway. #shorts",
     "channel": "The Love Editorial Office",
     "published": "2026-11-24T02:03:07Z",
-    "views": 11300082,
-    "likes": 375585,
-    "comments": 3443,
-    "views_per_hour": 133265,
+    "views": 11318671,
+    "likes": 375941,
+    "comments": 3446,
+    "views_per_hour": 132943,
     "url": "https://www.youtube.com/watch?v=uK_8IXmGhO0",
     "category": 24
    },
@@ -514,10 +514,10 @@
     "title": "I couldn't even afford him a white T-shirt. He loved me anyway. #shorts",
     "channel": "The Love Editorial Office",
     "published": "2026-11-24T02:03:07Z",
-    "views": 11300082,
-    "likes": 375585,
-    "comments": 3443,
-    "views_per_hour": 133265,
+    "views": 11318671,
+    "likes": 375941,
+    "comments": 3446,
+    "views_per_hour": 132943,
     "url": "https://www.youtube.com/watch?v=uK_8IXmGhO0",
     "category": 23
    },
@@ -526,10 +526,10 @@
     "title": "Don't Do That",
     "channel": "penguinz0",
     "published": "2026-11-25T17:00:09Z",
-    "views": 5843726,
-    "likes": 95050,
-    "comments": 7043,
-    "views_per_hour": 127471,
+    "views": 5855990,
+    "likes": 95303,
+    "comments": 7059,
+    "views_per_hour": 126784,
     "url": "https://www.youtube.com/watch?v=9B1ljU7lv-E",
     "category": 20
    },
@@ -538,10 +538,10 @@
     "title": "Conduct An About-Face! 🫡",
     "channel": "WarWhispers",
     "published": "2026-11-24T22:54:52Z",
-    "views": 7798605,
-    "likes": 142264,
+    "views": 7806249,
+    "likes": 142332,
     "comments": 3001,
-    "views_per_hour": 121983,
+    "views_per_hour": 121448,
     "url": "https://www.youtube.com/watch?v=ru_1pEFPVmY",
     "category": 24
    },
@@ -550,10 +550,10 @@
     "title": "Speed Proves that he is FASTER than Most of the olympians 🥶🔥 #ishowspeed #challenge #wshortzzzz",
     "channel": "wShortzzzz",
     "published": "2026-11-24T13:23:09Z",
-    "views": 7571541,
-    "likes": 204000,
-    "comments": 2579,
-    "views_per_hour": 103070,
+    "views": 7598016,
+    "likes": 204490,
+    "comments": 2585,
+    "views_per_hour": 102947,
     "url": "https://www.youtube.com/watch?v=-9irDfFJUwM",
     "category": 17
    },
@@ -562,10 +562,10 @@
     "title": "NBA Players HATE Dunking 🏀💀",
     "channel": "I Love Basketball ",
     "published": "2026-11-26T00:30:06Z",
-    "views": 3576361,
-    "likes": 48678,
+    "views": 3596989,
+    "likes": 48912,
     "comments": 165,
-    "views_per_hour": 93269,
+    "views_per_hour": 92971,
     "url": "https://www.youtube.com/watch?v=Nw7prGKQCqk",
     "category": 17
    },
@@ -574,10 +574,10 @@
     "title": "Aaron Rodgers Tells His Side Of The Story After Shocking Steelers Benching",
     "channel": "The Pat McAfee Show",
     "published": "2026-11-25T19:45:22Z",
-    "views": 3964195,
-    "likes": 44717,
-    "comments": 13015,
-    "views_per_hour": 91998,
+    "views": 3970283,
+    "likes": 44796,
+    "comments": 13055,
+    "views_per_hour": 91407,
     "url": "https://www.youtube.com/watch?v=F9DkivQZA7k",
     "category": 17
    },
@@ -586,10 +586,10 @@
     "title": "Why Nobody Uses This Viral Moonball Anymore? 🤯 #shorts",
     "channel": "Riyad Surur",
     "published": "2026-11-23T19:18:37Z",
-    "views": 8289330,
-    "likes": 219007,
+    "views": 8291660,
+    "likes": 219040,
     "comments": 4098,
-    "views_per_hour": 90558,
+    "views_per_hour": 90244,
     "url": "https://www.youtube.com/watch?v=bjaa2zlXJ4s",
     "category": 24
    },
@@ -598,10 +598,10 @@
     "title": "Riley Curry GREW UP🥹 #shorts",
     "channel": "DunkPrød",
     "published": "2026-11-24T02:11:59Z",
-    "views": 7659497,
-    "likes": 93753,
+    "views": 7665357,
+    "likes": 93805,
     "comments": 455,
-    "views_per_hour": 90488,
+    "views_per_hour": 90190,
     "url": "https://www.youtube.com/watch?v=o9ytMdgBI7M",
     "category": 17
    },
@@ -610,10 +610,10 @@
     "title": "This Viral Soccer Ball Is Too Good 🤯 #shorts",
     "channel": "Riyad Surur",
     "published": "2026-11-23T14:00:19Z",
-    "views": 8232941,
-    "likes": 213130,
-    "comments": 4644,
-    "views_per_hour": 85015,
+    "views": 8271060,
+    "likes": 215337,
+    "comments": 4705,
+    "views_per_hour": 85106,
     "url": "https://www.youtube.com/watch?v=tAWF5t_Gx9E",
     "category": 17
    },
@@ -622,10 +622,10 @@
     "title": "POV: Thanksgiving Football 🏈🦃 #theboys #viral #shorts #thanksgiving #football",
     "channel": "The Johnson Brothers",
     "published": "2026-11-25T22:54:03Z",
-    "views": 3349146,
-    "likes": 139411,
-    "comments": 1099,
-    "views_per_hour": 83843,
+    "views": 3355304,
+    "likes": 139671,
+    "comments": 1101,
+    "views_per_hour": 83278,
     "url": "https://www.youtube.com/watch?v=8PucZCtbMls",
     "category": 17
    },
@@ -634,10 +634,10 @@
     "title": "I Can’t Eat Until LeBron Scores!",
     "channel": "Ian Hietala",
     "published": "2026-11-25T17:00:04Z",
-    "views": 3771431,
-    "likes": 56505,
+    "views": 3779115,
+    "likes": 56640,
     "comments": 329,
-    "views_per_hour": 82265,
+    "views_per_hour": 81817,
     "url": "https://www.youtube.com/watch?v=2ZVUh9vuZ44",
     "category": 17
    },
@@ -646,10 +646,10 @@
     "title": "GTA 6 #2",
     "channel": "CoryxKenshin",
     "published": "2026-11-24T21:46:47Z",
-    "views": 5295175,
-    "likes": 299175,
-    "comments": 26797,
-    "views_per_hour": 81381,
+    "views": 5299934,
+    "likes": 299378,
+    "comments": 26810,
+    "views_per_hour": 81025,
     "url": "https://www.youtube.com/watch?v=umDq3LY7sFA",
     "category": 20
    },
@@ -658,10 +658,10 @@
     "title": "Grand Theft Auto VI",
     "channel": "videogamedunkey",
     "published": "2026-11-25T20:30:00Z",
-    "views": 3390788,
-    "likes": 81481,
-    "comments": 3958,
-    "views_per_hour": 80073,
+    "views": 3397833,
+    "likes": 81667,
+    "comments": 3965,
+    "views_per_hour": 79591,
     "url": "https://www.youtube.com/watch?v=jPU38VyVVgE",
     "category": 20
    }
@@ -672,10 +672,10 @@
     "title": "Gangnam style Trend | VICE CITY |  GTA 6 GAMEPLAY#shorts #viral",
     "channel": "Tashu Tutorial ",
     "published": "2026-11-26T08:00:01Z",
-    "views": 18282138,
+    "views": 18342943,
     "likes": 0,
     "comments": 68,
-    "views_per_hour": 592694,
+    "views_per_hour": 588087,
     "url": "https://www.youtube.com/watch?v=gK-j8AbxGHI",
     "keyword": "GTA 6"
    },
@@ -684,10 +684,10 @@
     "title": "大家帮小狗做下选择。#GTA #GTA6 #shorts",
     "channel": "GTA6",
     "published": "2026-11-26T10:00:32Z",
-    "views": 15911500,
-    "likes": 461546,
-    "comments": 999,
-    "views_per_hour": 551769,
+    "views": 16197088,
+    "likes": 469041,
+    "comments": 1020,
+    "views_per_hour": 555032,
     "url": "https://www.youtube.com/watch?v=oWINotoafIA",
     "keyword": "GTA 6"
    },
@@ -696,10 +696,10 @@
     "title": "Ps5 tod diya😭| Gta 6 gameplay | kanjoos dad | #chetanmonga #comedy #shorts",
     "channel": "Cheri's World",
     "published": "2026-11-26T09:13:30Z",
-    "views": 8149989,
-    "likes": 149501,
-    "comments": 471,
-    "views_per_hour": 275141,
+    "views": 8284657,
+    "likes": 151628,
+    "comments": 473,
+    "views_per_hour": 276467,
     "url": "https://www.youtube.com/watch?v=0m13sHrPARw",
     "keyword": "GTA 6"
    },
@@ -708,10 +708,10 @@
     "title": "GTA 6 на ПК раньше срока: Почему Rockstar в панике сносит интернет",
     "channel": "i11ushenka",
     "published": "2026-11-26T14:04:40Z",
-    "views": 5065854,
-    "likes": 209365,
-    "comments": 4206,
-    "views_per_hour": 204529,
+    "views": 5118812,
+    "likes": 211130,
+    "comments": 4226,
+    "views_per_hour": 203828,
     "url": "https://www.youtube.com/watch?v=h9XMDL1K1P0",
     "keyword": "GTA 6"
    },
@@ -720,10 +720,10 @@
     "title": "Couch Glitch For New GTA 6 😂🎮 #Target #Couch #GTA6 #GTA #YouTubeShorts",
     "channel": "VerrTV",
     "published": "2026-11-25T16:40:28Z",
-    "views": 5373964,
-    "likes": 48447,
-    "comments": 287,
-    "views_per_hour": 116391,
+    "views": 5431738,
+    "likes": 48969,
+    "comments": 290,
+    "views_per_hour": 116770,
     "url": "https://www.youtube.com/watch?v=VkjAW6oztks",
     "keyword": "GTA 6"
    },
@@ -732,10 +732,10 @@
     "title": "GTA 6 PLAYS BEST ON XBOX #shorts",
     "channel": "jacobweeby",
     "published": "2026-11-25T23:31:57Z",
-    "views": 3699160,
-    "likes": 179946,
-    "comments": 6356,
-    "views_per_hour": 94094,
+    "views": 3712997,
+    "likes": 180492,
+    "comments": 6387,
+    "views_per_hour": 93624,
     "url": "https://www.youtube.com/watch?v=wBssKsgKBdU",
     "keyword": "GTA 6"
    },
@@ -744,10 +744,10 @@
     "title": "Absolute MENACE in GTA 6 😭",
     "channel": "John Casterline",
     "published": "2026-11-25T23:22:35Z",
-    "views": 2782825,
-    "likes": 117421,
-    "comments": 799,
-    "views_per_hour": 70505,
+    "views": 2788621,
+    "likes": 117745,
+    "comments": 801,
+    "views_per_hour": 70040,
     "url": "https://www.youtube.com/watch?v=vPscuQHjgLw",
     "keyword": "GTA 6"
    },
@@ -756,10 +756,10 @@
     "title": "What If You Built A Snake That Can Fly!? 😳🐍",
     "channel": "His Clips",
     "published": "2026-11-26T15:17:25Z",
-    "views": 1616659,
-    "likes": 40082,
-    "comments": 268,
-    "views_per_hour": 68631,
+    "views": 1661724,
+    "likes": 40845,
+    "comments": 273,
+    "views_per_hour": 69526,
     "url": "https://www.youtube.com/watch?v=S0V_4cza_fw",
     "keyword": "what if"
    },
@@ -768,10 +768,10 @@
     "title": "4 Secret Gold Gun Locations in GTA 6",
     "channel": "JayWayyGaming",
     "published": "2026-11-25T22:00:21Z",
-    "views": 2372357,
-    "likes": 92038,
-    "comments": 298,
-    "views_per_hour": 58089,
+    "views": 2388883,
+    "likes": 92448,
+    "comments": 300,
+    "views_per_hour": 58003,
     "url": "https://www.youtube.com/watch?v=uTRXwj49rlc",
     "keyword": "GTA 6"
    },
@@ -780,11 +780,23 @@
     "title": "How to REMOVE Trackers in GTA 6 🤯",
     "channel": "Syinite Gaming",
     "published": "2026-11-26T00:57:00Z",
-    "views": 2165377,
-    "likes": 65518,
-    "comments": 655,
-    "views_per_hour": 57140,
+    "views": 2171292,
+    "likes": 65706,
+    "comments": 657,
+    "views_per_hour": 56779,
     "url": "https://www.youtube.com/watch?v=gAjSfgqnbG4",
+    "keyword": "GTA 6"
+   },
+   {
+    "id": "rlz0yPngxRQ",
+    "title": "¡Guardó Un Nugget Hasta Que Saliera GTA 6! 🍗",
+    "channel": "qasi",
+    "published": "2026-11-25T21:00:06Z",
+    "views": 2282044,
+    "likes": 50265,
+    "comments": 203,
+    "views_per_hour": 54090,
+    "url": "https://www.youtube.com/watch?v=rlz0yPngxRQ",
     "keyword": "GTA 6"
    },
    {
@@ -792,10 +804,10 @@
     "title": "Día 25 y aún no me toca el Token 🪙😔 #fortnite",
     "channel": "xValDrax",
     "published": "2026-11-26T17:00:03Z",
-    "views": 1147217,
-    "likes": 22889,
-    "comments": 147,
-    "views_per_hour": 52516,
+    "views": 1166808,
+    "likes": 23625,
+    "comments": 148,
+    "views_per_hour": 52582,
     "url": "https://www.youtube.com/watch?v=10Yn3FPepkQ",
     "keyword": "fortnite"
    },
@@ -804,47 +816,23 @@
     "title": "How can this be better? 💀 #shorts #fortnite",
     "channel": "edithan",
     "published": "2026-11-26T02:09:24Z",
-    "views": 1819438,
-    "likes": 23712,
-    "comments": 330,
-    "views_per_hour": 49590,
+    "views": 1829566,
+    "likes": 23768,
+    "comments": 331,
+    "views_per_hour": 49402,
     "url": "https://www.youtube.com/watch?v=FVxiVCjTe0I",
     "keyword": "fortnite"
-   },
-   {
-    "id": "n0qdyatgCPk",
-    "title": "TÁ TODO MUNDO VICIADO EM GTA 6!",
-    "channel": "Jaum Brow",
-    "published": "2026-11-25T15:10:07Z",
-    "views": 2267825,
-    "likes": 32337,
-    "comments": 49,
-    "views_per_hour": 47566,
-    "url": "https://www.youtube.com/watch?v=n0qdyatgCPk",
-    "keyword": "GTA 6"
    },
    {
     "id": "DWf_0be-Xyc",
     "title": "They ruined his whistle 😭 #shorts #fortnite",
     "channel": "edithan",
     "published": "2026-11-25T20:14:14Z",
-    "views": 1947868,
-    "likes": 24431,
-    "comments": 506,
-    "views_per_hour": 45715,
+    "views": 1951339,
+    "likes": 24447,
+    "comments": 507,
+    "views_per_hour": 45429,
     "url": "https://www.youtube.com/watch?v=DWf_0be-Xyc",
-    "keyword": "fortnite"
-   },
-   {
-    "id": "8148mgMFLPM",
-    "title": "WYFUL GOT BLAMED 🥺💔 (fortnite) @Wyful",
-    "channel": "Wyful Shorts",
-    "published": "2026-11-26T00:25:50Z",
-    "views": 1608248,
-    "likes": 10812,
-    "comments": 139,
-    "views_per_hour": 41864,
-    "url": "https://www.youtube.com/watch?v=8148mgMFLPM",
     "keyword": "fortnite"
    },
    {
@@ -852,10 +840,10 @@
     "title": "AKU MEMASANG TEMBOK UNTUK MENGHALANGI PENJAGA TELUR! 😂",
     "channel": "Deka M Fathan",
     "published": "2026-11-26T07:00:31Z",
-    "views": 1150694,
-    "likes": 5987,
+    "views": 1157289,
+    "likes": 5975,
     "comments": 10,
-    "views_per_hour": 36143,
+    "views_per_hour": 35960,
     "url": "https://www.youtube.com/watch?v=U4oYHqC2Jzw",
     "keyword": "what if"
    },
@@ -864,10 +852,10 @@
     "title": "why is the Jupiter 2011 incident in Fortnite 😞💔 #jupiter #Fortnite #caseoh #joebartolozzi",
     "channel": "Vexbolts",
     "published": "2026-11-26T06:46:17Z",
-    "views": 1147568,
-    "likes": 11925,
-    "comments": 369,
-    "views_per_hour": 35778,
+    "views": 1151302,
+    "likes": 11968,
+    "comments": 370,
+    "views_per_hour": 35512,
     "url": "https://www.youtube.com/watch?v=QjIwQtdNI8M",
     "keyword": "fortnite"
    },
@@ -876,35 +864,11 @@
     "title": "答えが黒歴史だったら？www",
     "channel": "伊吹とよへ",
     "published": "2026-11-26T11:00:25Z",
-    "views": 809724,
-    "likes": 17725,
+    "views": 816114,
+    "likes": 17799,
     "comments": 128,
-    "views_per_hour": 29086,
+    "views_per_hour": 28956,
     "url": "https://www.youtube.com/watch?v=fPiKmxh3_qo",
-    "keyword": "what if"
-   },
-   {
-    "id": "btKbemdhMV8",
-    "title": "Only people who shot at Doctor Doom in 2024 can like🥹#fortnite #nostalgia #chapter5 #doctordoom",
-    "channel": "SwiftyFN",
-    "published": "2026-11-26T01:07:09Z",
-    "views": 1019249,
-    "likes": 30083,
-    "comments": 908,
-    "views_per_hour": 27016,
-    "url": "https://www.youtube.com/watch?v=btKbemdhMV8",
-    "keyword": "fortnite"
-   },
-   {
-    "id": "Vyh_In-ZiAg",
-    "title": "what if we have knees.                     #forsaken # #roblox #memes #robloxedit #shedletsky #tech",
-    "channel": "BuiLdeRm4n",
-    "published": "2026-11-25T15:09:42Z",
-    "views": 1091298,
-    "likes": 28591,
-    "comments": 224,
-    "views_per_hour": 22886,
-    "url": "https://www.youtube.com/watch?v=Vyh_In-ZiAg",
     "keyword": "what if"
    },
    {
@@ -912,10 +876,10 @@
     "title": "What If Jason NEVER Picks Up Lucia 💀",
     "channel": "Kuza's Moves",
     "published": "2026-11-25T22:09:04Z",
-    "views": 814805,
-    "likes": 15352,
+    "views": 816707,
+    "likes": 15428,
     "comments": 52,
-    "views_per_hour": 20022,
+    "views_per_hour": 19900,
     "url": "https://www.youtube.com/watch?v=IoHCRWZP8WE",
     "keyword": "what if"
    },
@@ -924,10 +888,10 @@
     "title": "Battle Royale Zero Build 🤣 #fortnite #fortnitefunnymoments #fortnitememes",
     "channel": "DiZelFN",
     "published": "2026-11-26T06:00:30Z",
-    "views": 608547,
-    "likes": 11032,
+    "views": 610685,
+    "likes": 11079,
     "comments": 66,
-    "views_per_hour": 18532,
+    "views_per_hour": 18404,
     "url": "https://www.youtube.com/watch?v=OYQ_YSbyk7A",
     "keyword": "fortnite"
    },
@@ -936,10 +900,10 @@
     "title": "What if every team had to use their Manager in their Prime in the Starting XI?",
     "channel": "ASP FC",
     "published": "2026-11-25T16:00:35Z",
-    "views": 845321,
-    "likes": 49669,
-    "comments": 373,
-    "views_per_hour": 18048,
+    "views": 846744,
+    "likes": 49728,
+    "comments": 374,
+    "views_per_hour": 17947,
     "url": "https://www.youtube.com/watch?v=AB0_BC__k8A",
     "keyword": "what if"
    },
@@ -948,10 +912,10 @@
     "title": "Ive missed you Terry 🥹 #fortnite #fortniteclips #fortniteshorts #gaming",
     "channel": "NotQazify",
     "published": "2026-11-25T16:00:33Z",
-    "views": 839013,
-    "likes": 8791,
-    "comments": 308,
-    "views_per_hour": 17913,
+    "views": 842798,
+    "likes": 8809,
+    "comments": 309,
+    "views_per_hour": 17863,
     "url": "https://www.youtube.com/watch?v=53AzC5wLfCU",
     "keyword": "fortnite"
    },
@@ -960,11 +924,23 @@
     "title": "FINALLY😭 #fortnite #gaming",
     "channel": "Kahhma",
     "published": "2026-11-26T01:18:31Z",
-    "views": 670989,
-    "likes": 5231,
+    "views": 672388,
+    "likes": 5248,
     "comments": 79,
-    "views_per_hour": 17875,
+    "views_per_hour": 17749,
     "url": "https://www.youtube.com/watch?v=Ep-maVzoL_4",
+    "keyword": "fortnite"
+   },
+   {
+    "id": "Mu5IKRv-r4E",
+    "title": "they NERFED Oscar…🥺 #fortnite #fortniteclips",
+    "channel": "jusswave",
+    "published": "2026-11-25T15:45:13Z",
+    "views": 783531,
+    "likes": 5550,
+    "comments": 85,
+    "views_per_hour": 16517,
+    "url": "https://www.youtube.com/watch?v=Mu5IKRv-r4E",
     "keyword": "fortnite"
    },
    {
@@ -972,22 +948,10 @@
     "title": "What if a Fortnite match never ended?",
     "channel": "YapMaps",
     "published": "2026-11-25T17:00:01Z",
-    "views": 723496,
-    "likes": 18094,
+    "views": 726036,
+    "likes": 18171,
     "comments": 101,
-    "views_per_hour": 15781,
-    "url": "https://www.youtube.com/watch?v=syoxrOgQKgE",
-    "keyword": "what if"
-   },
-   {
-    "id": "syoxrOgQKgE",
-    "title": "What if a Fortnite match never ended?",
-    "channel": "YapMaps",
-    "published": "2026-11-25T17:00:01Z",
-    "views": 723496,
-    "likes": 18094,
-    "comments": 101,
-    "views_per_hour": 15781,
+    "views_per_hour": 15718,
     "url": "https://www.youtube.com/watch?v=syoxrOgQKgE",
     "keyword": "fortnite"
    },
@@ -996,35 +960,71 @@
     "title": "What if you have to pee?",
     "channel": "mr wooper",
     "published": "2026-11-25T18:09:29Z",
-    "views": 666196,
-    "likes": 3379,
+    "views": 671052,
+    "likes": 3384,
     "comments": 32,
-    "views_per_hour": 14908,
+    "views_per_hour": 14901,
     "url": "https://www.youtube.com/watch?v=nu6SqLZ5AaA",
     "keyword": "what if"
+   },
+   {
+    "id": "aVU9VWkeKR8",
+    "title": "What If France Got Kicked Out Of Europe?",
+    "channel": "60SecondClub",
+    "published": "2026-11-26T04:00:16Z",
+    "views": 511373,
+    "likes": 7182,
+    "comments": 315,
+    "views_per_hour": 14533,
+    "url": "https://www.youtube.com/watch?v=aVU9VWkeKR8",
+    "keyword": "what if"
+   },
+   {
+    "id": "U8Av2f7bjBY",
+    "title": "many hours with bro on this map 🥺🥺 #fortniteclips #fortnite #chapter2 #nostalgia",
+    "channel": "AJ7Matrix Live",
+    "published": "2026-11-25T18:30:12Z",
+    "views": 555344,
+    "likes": 7322,
+    "comments": 239,
+    "views_per_hour": 12427,
+    "url": "https://www.youtube.com/watch?v=U8Av2f7bjBY",
+    "keyword": "fortnite"
    },
    {
     "id": "_kKSr6Gibig",
     "title": "E SE ISSO ACONTECESSE CONTRA NORUEGA?",
     "channel": "DonSports",
     "published": "2026-11-25T16:28:30Z",
-    "views": 570027,
-    "likes": 8884,
-    "comments": 833,
-    "views_per_hour": 12293,
+    "views": 571434,
+    "likes": 8896,
+    "comments": 836,
+    "views_per_hour": 12232,
     "url": "https://www.youtube.com/watch?v=_kKSr6Gibig",
     "keyword": "what if"
    },
    {
-    "id": "KNfV0Oz0__o",
-    "title": "¿Y Si el Azul de Las Banderas Fuera Rojo? #countryballs",
-    "channel": "Profe Tierra",
-    "published": "2026-11-25T15:00:19Z",
-    "views": 475804,
-    "likes": 21705,
-    "comments": 487,
-    "views_per_hour": 9946,
-    "url": "https://www.youtube.com/watch?v=KNfV0Oz0__o",
+    "id": "T6XmzFsWXmM",
+    "title": "What If Doctor Strange Left Loki Falling FOREVER? ♾️",
+    "channel": "Mostly Cannon Universe",
+    "published": "2026-11-25T15:18:37Z",
+    "views": 562124,
+    "likes": 8529,
+    "comments": 82,
+    "views_per_hour": 11740,
+    "url": "https://www.youtube.com/watch?v=T6XmzFsWXmM",
+    "keyword": "what if"
+   },
+   {
+    "id": "6s3tbTApExs",
+    "title": "What If Everyone Was Toy Chica In Frickbears 3",
+    "channel": "Yoitshusky",
+    "published": "2026-11-25T18:02:05Z",
+    "views": 465140,
+    "likes": 29463,
+    "comments": 494,
+    "views_per_hour": 10301,
+    "url": "https://www.youtube.com/watch?v=6s3tbTApExs",
     "keyword": "what if"
    },
    {
@@ -1032,10 +1032,10 @@
     "title": "Countries real size comparison #countryballs #shorts",
     "channel": "geoballshorts ",
     "published": "2026-11-26T14:10:36Z",
-    "views": 208133,
-    "likes": 1369,
-    "comments": 19,
-    "views_per_hour": 8437,
+    "views": 212332,
+    "likes": 1367,
+    "comments": 21,
+    "views_per_hour": 8488,
     "url": "https://www.youtube.com/watch?v=3Gq5bFEUuG8",
     "keyword": "size comparison"
    },
@@ -1044,23 +1044,11 @@
     "title": "SUN vs STEPHENSON 2-18 vs PHOENIX A! 🤯 | Cosmic Monsters Compared! #sun #space #blackhole #size",
     "channel": "Dark Explain",
     "published": "2026-11-26T11:00:37Z",
-    "views": 234697,
-    "likes": 3521,
-    "comments": 206,
-    "views_per_hour": 8431,
+    "views": 237267,
+    "likes": 3553,
+    "comments": 207,
+    "views_per_hour": 8419,
     "url": "https://www.youtube.com/watch?v=AsdMJEtUOFI",
-    "keyword": "size comparison"
-   },
-   {
-    "id": "ox3IHmDojY0",
-    "title": "2ta small cake vs 3ta big size cake with donuts 🍩 | ziggy cake test",
-    "channel": "Mr Premium Shorts ",
-    "published": "2026-11-26T05:19:15Z",
-    "views": 254614,
-    "likes": 1104,
-    "comments": 1,
-    "views_per_hour": 7595,
-    "url": "https://www.youtube.com/watch?v=ox3IHmDojY0",
     "keyword": "size comparison"
    },
    {
@@ -1068,10 +1056,10 @@
     "title": "Countries With Almost Similar Maps Part 1 😨 #countryballs #shorts",
     "channel": "WorldNex ",
     "published": "2026-11-26T00:00:14Z",
-    "views": 214107,
-    "likes": 1180,
+    "views": 214210,
+    "likes": 1182,
     "comments": 13,
-    "views_per_hour": 5512,
+    "views_per_hour": 5466,
     "url": "https://www.youtube.com/watch?v=IjrOGPAle78",
     "keyword": "3D animation comparison"
    },
@@ -1080,10 +1068,10 @@
     "title": "Emirates A380 Makes the Boeing 737 Look Tiny | Back-to-Back Size Comparison at Sydney Airport",
     "channel": "Aviation Vlogs",
     "published": "2026-11-25T18:12:00Z",
-    "views": 229794,
-    "likes": 1636,
-    "comments": 61,
-    "views_per_hour": 5147,
+    "views": 232581,
+    "likes": 1652,
+    "comments": 62,
+    "views_per_hour": 5169,
     "url": "https://www.youtube.com/watch?v=UONM9Pl8BzA",
     "keyword": "size comparison"
    },
@@ -1092,10 +1080,10 @@
     "title": "Strongest Bite for Its Size: Only One Cracks Concrete 🐜",
     "channel": "Crush Tower Lab",
     "published": "2026-11-26T15:53:25Z",
-    "views": 106045,
-    "likes": 636,
+    "views": 107135,
+    "likes": 639,
     "comments": 3,
-    "views_per_hour": 4620,
+    "views_per_hour": 4598,
     "url": "https://www.youtube.com/watch?v=Wvr3RRNjhWY",
     "keyword": "size comparison"
    },
@@ -1104,11 +1092,23 @@
     "title": "France vs India! 😱 Can France Fit Inside India? 🇫🇷🇮🇳#shorts #shortvideo",
     "channel": "Geo Space",
     "published": "2026-11-26T11:30:16Z",
-    "views": 101835,
+    "views": 101952,
     "likes": 0,
     "comments": 4,
-    "views_per_hour": 3725,
+    "views_per_hour": 3682,
     "url": "https://www.youtube.com/watch?v=S5zZQBIk84A",
+    "keyword": "size comparison"
+   },
+   {
+    "id": "QEXAEvqbR4A",
+    "title": "🌏🇲🇲 Myanmar vs 🇮🇳 India | Size Comparison 😱",
+    "channel": "MapDecode yt",
+    "published": "2026-11-27T04:30:12Z",
+    "views": 34089,
+    "likes": 0,
+    "comments": 1,
+    "views_per_hour": 3190,
+    "url": "https://www.youtube.com/watch?v=QEXAEvqbR4A",
     "keyword": "size comparison"
    },
    {
@@ -1116,10 +1116,10 @@
     "title": "Size comparison Bird 2027 vs Dog 2029 vs Parrot 2029 Panda 3000 #horror",
     "channel": "SizeShadow",
     "published": "2026-11-26T11:59:06Z",
-    "views": 75816,
-    "likes": 431,
+    "views": 76416,
+    "likes": 434,
     "comments": 2,
-    "views_per_hour": 2823,
+    "views_per_hour": 2809,
     "url": "https://www.youtube.com/watch?v=FQziWBZPNfY",
     "keyword": "size comparison"
    },
@@ -1128,23 +1128,23 @@
     "title": "Sri Lanka Is Big Enough to Fit Bhutan Inside! 😱🇱🇰🇧🇹 #shorts #shortvideo",
     "channel": "Geo Space",
     "published": "2026-11-26T06:00:00Z",
-    "views": 92397,
+    "views": 92489,
     "likes": 0,
     "comments": 5,
-    "views_per_hour": 2813,
+    "views_per_hour": 2787,
     "url": "https://www.youtube.com/watch?v=WtCRKCRA2W8",
     "keyword": "size comparison"
    },
    {
-    "id": "d6kfHmhrk5I",
-    "title": "You Won't Believe How Many Fortnite Maps Fit In GTA 6 🗺️",
-    "channel": "Wanted Level",
-    "published": "2026-11-25T16:00:19Z",
-    "views": 125832,
-    "likes": 1195,
-    "comments": 125,
-    "views_per_hour": 2686,
-    "url": "https://www.youtube.com/watch?v=d6kfHmhrk5I",
+    "id": "FVfcBh4z3z8",
+    "title": "Does the USA Fit Inside Australia?! 🇺🇸🇦🇺 (True Size Map)",
+    "channel": "Mapsnap 2.0",
+    "published": "2026-11-25T17:41:43Z",
+    "views": 85916,
+    "likes": 299,
+    "comments": 2,
+    "views_per_hour": 1888,
+    "url": "https://www.youtube.com/watch?v=FVfcBh4z3z8",
     "keyword": "size comparison"
    }
   ]
@@ -1357,19 +1357,55 @@
  },
  "google_trends_intl": [
   {
+   "query": "bruno fernandes",
+   "approx_traffic": "500+",
+   "started": "Fri, 27 Nov 2026 06:50:00 -0800",
+   "news": [
+    {
+     "title": "Bruno Fernandes: Man Utd activate captain's 12-month option to extend contract which now ends in 2028",
+     "source": "Sky Sports",
+     "url": "https://www.skysports.com/football/news/13617215/bruno-fernandes-man-utd-activate-captains-12-month-option-to-extend-contract-which-now-ends-in-2028"
+    },
+    {
+     "title": "Bruno: I still watch Sporting's games!",
+     "source": "Manchester United",
+     "url": "https://www.manutd.com/en/news/bruno-i-still-watch-sportings-games-nov-2026"
+    }
+   ],
+   "geo": "GB"
+  },
+  {
+   "query": "game",
+   "approx_traffic": "5000+",
+   "started": "Fri, 27 Nov 2026 06:40:00 -0800",
+   "news": [
+    {
+     "title": "Bills 13, Chiefs 10 | Final Score, recap + highlights",
+     "source": "Buffalo Bills",
+     "url": "https://www.buffalobills.com/news/bills-13-chiefs-10-final-score-recap-highlights"
+    },
+    {
+     "title": "Tyler Bass Makes NFL History With Two Clutch Kicks",
+     "source": "Yahoo Sports",
+     "url": "https://sports.yahoo.com/general/videos/tyler-bass-makes-nfl-history-143020604.html"
+    }
+   ],
+   "geo": "GB"
+  },
+  {
    "query": "nicole scherzinger",
-   "approx_traffic": "200+",
+   "approx_traffic": "500+",
    "started": "Fri, 27 Nov 2026 06:30:00 -0800",
    "news": [
     {
-     "title": "Thom Evans Confirms Nicole Scherzinger Split After Seven Years Together",
-     "source": "HuffPost UK",
-     "url": "https://www.huffingtonpost.co.uk/entry/thom-evans-nicole-scherzinger-split-break-up_uk_6b098d9ae4b01f494a03ac93?ncid=NEWSSTAND0001"
+     "title": "Nicole Scherzinger and fiance Thom Evans SPLIT after seven years together as he shares heartbreaking statement",
+     "source": "The Sun",
+     "url": "https://www.thesun.co.uk/tvandshowbiz/41172279/nicole-scherzinger-fiance-thom-evans-split/"
     },
     {
-     "title": "Nicole Scherzinger and fiancé Thom Evans split after seven years",
-     "source": "Daily Mail",
-     "url": "https://www.dailymail.com/tvshowbiz/article-16326891/Nicole-Scherzinger-48-fianc-Thom-Evans-41-split-seven-years-reveals-one-ended-romance.html"
+     "title": "Nicole Scherzinger splits from rugby player fiancé of 7 years with sad statement",
+     "source": "Daily Star",
+     "url": "https://www.dailystar.co.uk/showbiz/breaking-nicole-scherzinger-splits-rugby-37923066"
     }
    ],
    "geo": "GB"
@@ -1452,9 +1488,9 @@
    "started": "Fri, 27 Nov 2026 05:50:00 -0800",
    "news": [
     {
-     "title": "Former Bake Off star reunited with beloved leather jacket - 40 years after it went missing",
-     "source": "The Mirror",
-     "url": "https://www.mirror.co.uk/news/uk-news/mel-giedroyc-jacket-charity-shop-37922576"
+     "title": "Mel Giedroyc’s lost jacket turns up 40 years later in charity shop",
+     "source": "The Independent",
+     "url": "https://www.independent.co.uk/news/uk/home-news/mel-giedroyc-oxfam-london-stroud-gloucestershire-b3092844.html"
     },
     {
      "title": "Mel Giedroyc Finds Lost University Jacket at Oxfam Shop",
@@ -1483,62 +1519,44 @@
    "geo": "GB"
   },
   {
-   "query": "police service of northern ireland",
-   "approx_traffic": "500+",
-   "started": "Fri, 27 Nov 2026 05:00:00 -0800",
+   "query": "supreme court of canada",
+   "approx_traffic": "5000+",
+   "started": "Fri, 27 Nov 2026 06:30:00 -0800",
    "news": [
     {
-     "title": "Police appeal after masked man tried to fire crossbow at PSNI station",
-     "source": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/c6x2wx99vnl7o"
+     "title": "Supreme Court to rule on Quebec’s secularism law. Experts say the stakes could not be higher",
+     "source": "CTV News",
+     "url": "https://www.ctvnews.ca/montreal/article/supreme-court-to-rule-on-quebecs-secularism-law-experts-say-the-stakes-could-not-be-higher/"
     },
     {
-     "title": "Officers hunt for man who fired crossbow at police station",
-     "source": "The Independent",
-     "url": "https://www.independent.co.uk/news/uk/home-news/belfast-durham-street-crossbow-police-attack-b3092801.html"
+     "title": "Supreme Court of Canada to deliver landmark ruling on Quebec’s Bill 21 today",
+     "source": "The Globe and Mail",
+     "url": "https://www.theglobeandmail.com/canada/article-bill-21-supreme-court-ruling-reaction-quebec-secularism-live-updates/"
     }
    ],
-   "geo": "GB"
-  },
-  {
-   "query": "australia gold prospector meteorite discovery",
-   "approx_traffic": "200+",
-   "started": "Fri, 27 Nov 2026 05:00:00 -0800",
-   "news": [
-    {
-     "title": "Man Keeps a Rock For Years, Hoping It's Gold. It Turned Out to Be So Much More Valuable",
-     "source": "ScienceAlert",
-     "url": "https://www.sciencealert.com/man-keeps-a-rock-for-years-hoping-its-gold-it-turned-out-to-be-even-more-valuable"
-    },
-    {
-     "title": "In 2015, a prospector in Australia dug up a heavy reddish rock and hoped for gold inside. Three years later, a museum told him it was a 4.6-billion-year-old me…",
-     "source": "Futura, le média qui explore le monde",
-     "url": "https://www.futura-sciences.com/en/in-2015-a-prospector-in-australia-dug-up-a-heavy-reddish-rock-and-hoped-for-gold-inside-three-years-later-a-museum-told-him-it-was-a-4-6-billion-year-old-meteorite_903345/"
-    }
-   ],
-   "geo": "GB"
+   "geo": "CA"
   },
   {
    "query": "benjamin netanyahu",
-   "approx_traffic": "100+",
+   "approx_traffic": "200+",
    "started": "Fri, 27 Nov 2026 06:20:00 -0800",
    "news": [
     {
-     "title": "The corruption case against Benjamin Netanyahu just suffered a serious blow. What comes next?",
-     "source": "CBC",
-     "url": "https://www.cbc.ca/news/world/benjamin-netanyahu-corruption-trial-9.7437235"
+     "title": "As he races to unseat Netanyahu, Eisenkot reaches deal with left-wing party",
+     "source": "The Washington Post",
+     "url": "https://www.washingtonpost.com/world/2026/11/26/he-races-unseat-netanyahu-eisenkot-reaches-deal-with-left-wing-party/"
     },
     {
-     "title": "Momentous decision looms after judges call for Netanyahu charges to be dropped",
-     "source": "The Guardian",
-     "url": "https://www.theguardian.com/world/2026/nov/27/israeli-justice-system-judges-call-drop-netanyahu-charges"
+     "title": "Eisenkot navigates tricky waters as he tests power-sharing with Netanyahu",
+     "source": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/27/eisenkot-navigates-tricky-waters-as-he-tests-power-sharing-with-netanyahu"
     }
    ],
    "geo": "CA"
   },
   {
    "query": "is the stock market open today",
-   "approx_traffic": "500+",
+   "approx_traffic": "100+",
    "started": "Fri, 27 Nov 2026 06:20:00 -0800",
    "news": [
     {
@@ -1547,9 +1565,9 @@
      "url": "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html"
     },
     {
-     "title": "U.S. Market to Reopen for Shortened Trading Session",
-     "source": "TipRanks",
-     "url": "https://www.tipranks.com/news/u-s-market-reopens-for-shortened-trading-session"
+     "title": "Keep Your Eye on the Ball Today",
+     "source": "RealMoney Pro",
+     "url": "https://pro.thestreet.com/market-commentary/keep-your-eye-on-the-ball-today"
     }
    ],
    "geo": "CA"
@@ -1574,7 +1592,7 @@
   },
   {
    "query": "prince",
-   "approx_traffic": "100+",
+   "approx_traffic": "200+",
    "started": "Fri, 27 Nov 2026 06:00:00 -0800",
    "news": [
     {
@@ -1632,14 +1650,14 @@
    "started": "Fri, 27 Nov 2026 05:40:00 -0800",
    "news": [
     {
-     "title": "War, fuel costs and aid cuts raise famine risk across 16 hotspots, UN agencies warn",
-     "source": "CBC",
-     "url": "https://www.cbc.ca/news/world/united-nations-food-report-hunger-warning-sudan-yemen-9.7438374"
+     "title": "Letter: Megha Talaharla, Ashburn",
+     "source": "LoudounNow.com",
+     "url": "https://www.loudounnow.com/opinion/letters_to_editor/letter-megha-talaharla-ashburn/article_e5244ed7-ba8a-4d81-83cf-219d454a191d.html"
     },
     {
-     "title": "UN warns hunger will deepen in the Middle East as war, fuel costs and aid cuts collide",
-     "source": "CTV News",
-     "url": "https://www.ctvnews.ca/health/article/un-warns-hunger-will-deepen-in-the-middle-east-as-war-fuel-costs-and-aid-cuts-collide/"
+     "title": "US food aid cuts hit American farmers and aid recipients",
+     "source": "Mezha.net",
+     "url": "https://mezha.net/eng/news/mezha-2a4f3929224d32e99610c8c7_us_food_aid/"
     }
    ],
    "geo": "CA"
@@ -1663,22 +1681,22 @@
    "geo": "CA"
   },
   {
-   "query": "kevin o'leary",
-   "approx_traffic": "1000+",
-   "started": "Fri, 27 Nov 2026 05:30:00 -0800",
+   "query": "home alone meal",
+   "approx_traffic": "200+",
+   "started": "Fri, 27 Nov 2026 06:30:00 -0800",
    "news": [
     {
-     "title": "Kevin O’Leary told Gen Z to invest 15% of each paycheck. One worker asked why investors get the profits",
-     "source": "Fortune",
-     "url": "https://fortune.com/2026/11/27/kevin-oleary-gen-z-worker-jubilee-debate-profits-equity/"
+     "title": "McDonald’s Christmas ad scores highest for ‘brand link’, data finds",
+     "source": "Marketing Week",
+     "url": "https://www.marketingweek.com/mcdonalds-christmas-brand-link/"
     },
     {
-     "title": "Gen Z Worker Confronts Kevin O’Leary Over Why Investors Get Rich While Employees Miss Out: ‘Why Should You Be the Only One Getting Wealthy?’",
-     "source": "Yahoo Finance",
-     "url": "https://finance.yahoo.com/small-business/articles/gen-z-worker-confronts-kevin-223006879.html"
+     "title": "McDonald’s and Home Alone is a match made in 90s heaven",
+     "source": "The Drum",
+     "url": "https://www.thedrum.com/opinion/mcdonald-s-and-home-alone-is-a-match-made-in-90s-heaven"
     }
    ],
-   "geo": "CA"
+   "geo": "AU"
   },
   {
    "query": "syria vs philippines",
@@ -1700,7 +1718,7 @@
   },
   {
    "query": "pak a vs ban a",
-   "approx_traffic": "1000+",
+   "approx_traffic": "2000+",
    "started": "Fri, 27 Nov 2026 03:30:00 -0800",
    "news": [
     {
@@ -1722,14 +1740,14 @@
    "started": "Fri, 27 Nov 2026 03:10:00 -0800",
    "news": [
     {
-     "title": "Mostert DNF, Kostecki win reshapes points picture",
+     "title": "Kostecki claims vital win in crazy Adelaide sprint",
      "source": "Supercars",
-     "url": "https://www.supercars.com/news/supercars-news-2026-finals-points-standings-friday-chaz-mostert-dnf-matt-payne-brodie-kostecki-win-incident"
+     "url": "https://www.supercars.com/news/supercars-news-2026-adelaide-friday-race-report-brodie-kostecki-wins-chaos-matt-payne-chaz-mostert-controversy"
     },
     {
-     "title": "Huge Grand Final controversy as contenders collide, sparking major Supercars title race twist",
-     "source": "Fox Sports",
-     "url": "https://www.foxsports.com.au/en-AU/news/motorsport/supercars-2026-adelaide-grand-final-friday-sprint-results/1qk5v1joj24j01hzilzpy10u13"
+     "title": "Elbows out as Kostecki edges closer to Supercars leader",
+     "source": "The Canberra Times",
+     "url": "https://www.canberratimes.com.au/story/9399396/elbows-out-as-kostecki-edges-closer-to-supercars-leader/"
     }
    ],
    "geo": "AU"
@@ -1766,24 +1784,6 @@
      "title": "Increasing wind and mild temperatures for Thanksgiving",
      "source": "KRTV",
      "url": "https://www.krtv.com/weather/todays-forecast/increasing-wind-and-mild-temperatures-for-thanksgiving"
-    }
-   ],
-   "geo": "AU"
-  },
-  {
-   "query": "emma kearney",
-   "approx_traffic": "200+",
-   "started": "Fri, 27 Nov 2026 02:50:00 -0800",
-   "news": [
-    {
-     "title": "Brutal but phenomenal: The inside story of one of the AFLW’s best",
-     "source": "The Age",
-     "url": "https://www.theage.com.au/sport/afl/brutal-but-phenomenal-the-inside-story-of-one-of-the-aflw-s-best-20261127-p61hfl.html"
-    },
-    {
-     "title": "Brutal but phenomenal: The inside story of one of the AFLW’s best",
-     "source": "Brisbane Times",
-     "url": "https://www.brisbanetimes.com.au/sport/afl/brutal-but-phenomenal-the-inside-story-of-one-of-the-aflw-s-best-20261127-p61hfl.html"
     }
    ],
    "geo": "AU"
@@ -2289,10 +2289,10 @@
   {
    "id": "50663595",
    "title": "The group chat where your AI talks behind your back",
-   "points": 470,
-   "comments": 208,
-   "age_hours": 8.1,
-   "velocity": 58.0,
+   "points": 485,
+   "comments": 212,
+   "age_hours": 8.4,
+   "velocity": 57.4,
    "url": "https://construct22.com/",
    "discussion": "https://news.ycombinator.com/item?id=50663595",
    "new_since_last_run": false
@@ -2300,10 +2300,10 @@
   {
    "id": "50660180",
    "title": "AI made self-hosting fun again",
-   "points": 889,
-   "comments": 432,
-   "age_hours": 17.1,
-   "velocity": 52.1,
+   "points": 894,
+   "comments": 438,
+   "age_hours": 17.4,
+   "velocity": 51.4,
    "url": "https://janlukas.blog/posts/ai-self-hosting",
    "discussion": "https://news.ycombinator.com/item?id=50660180",
    "new_since_last_run": false
@@ -2311,10 +2311,10 @@
   {
    "id": "50665968",
    "title": "A Deterministic Subexponential-Time Algorithm for the Discrete Logarithm Problem [pdf]",
-   "points": 119,
-   "comments": 54,
-   "age_hours": 2.7,
-   "velocity": 44.1,
+   "points": 138,
+   "comments": 59,
+   "age_hours": 3.0,
+   "velocity": 45.3,
    "url": "https://eprint.iacr.org/2026/3020.pdf",
    "discussion": "https://news.ycombinator.com/item?id=50665968",
    "new_since_last_run": false
@@ -2322,10 +2322,10 @@
   {
    "id": "50666375",
    "title": "US Air Force's cloud computing platform hacked",
-   "points": 82,
-   "comments": 28,
-   "age_hours": 1.9,
-   "velocity": 42.2,
+   "points": 102,
+   "comments": 46,
+   "age_hours": 2.3,
+   "velocity": 44.5,
    "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
    "discussion": "https://news.ycombinator.com/item?id=50666375",
    "new_since_last_run": false
@@ -2333,10 +2333,10 @@
   {
    "id": "50661646",
    "title": "Hard Drive pricing has gotten bad",
-   "points": 453,
-   "comments": 396,
-   "age_hours": 13.6,
-   "velocity": 33.3,
+   "points": 461,
+   "comments": 401,
+   "age_hours": 14.0,
+   "velocity": 33.0,
    "url": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
    "discussion": "https://news.ycombinator.com/item?id=50661646",
    "new_since_last_run": false
@@ -2344,10 +2344,10 @@
   {
    "id": "50665920",
    "title": "Kimi for Science: More scientific ideas, made possible",
-   "points": 80,
-   "comments": 33,
-   "age_hours": 2.8,
-   "velocity": 28.6,
+   "points": 90,
+   "comments": 41,
+   "age_hours": 3.1,
+   "velocity": 28.7,
    "url": "https://www.kimi.ai/news/kimi-for-science-program",
    "discussion": "https://news.ycombinator.com/item?id=50665920",
    "new_since_last_run": false
@@ -2355,10 +2355,10 @@
   {
    "id": "50666279",
    "title": "New York and California Age Gating Rules Go into Effect in the New Year",
-   "points": 54,
-   "comments": 33,
-   "age_hours": 2.1,
-   "velocity": 25.5,
+   "points": 63,
+   "comments": 52,
+   "age_hours": 2.5,
+   "velocity": 25.6,
    "url": "https://www.eff.org/deeplinks/2026/11/new-york-and-california-age-gating-rules-go-effect-new-year",
    "discussion": "https://news.ycombinator.com/item?id=50666279",
    "new_since_last_run": false
@@ -2366,9 +2366,9 @@
   {
    "id": "50659640",
    "title": "Company Culture = Slack Emoji ÷ √Headcount",
-   "points": 458,
-   "comments": 228,
-   "age_hours": 18.0,
+   "points": 466,
+   "comments": 236,
+   "age_hours": 18.4,
    "velocity": 25.4,
    "url": "https://lia.mg/posts/measuring-company-culture-with-slack-emoji/",
    "discussion": "https://news.ycombinator.com/item?id=50659640",
@@ -2377,10 +2377,10 @@
   {
    "id": "50659841",
    "title": "Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad",
-   "points": 445,
-   "comments": 113,
-   "age_hours": 17.7,
-   "velocity": 25.1,
+   "points": 451,
+   "comments": 116,
+   "age_hours": 18.1,
+   "velocity": 25.0,
    "url": "https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/",
    "discussion": "https://news.ycombinator.com/item?id=50659841",
    "new_since_last_run": false
@@ -2388,10 +2388,10 @@
   {
    "id": "50663261",
    "title": "Buy Nothing Day – Friday November 27th 2026",
-   "points": 223,
-   "comments": 57,
-   "age_hours": 9.0,
-   "velocity": 24.9,
+   "points": 229,
+   "comments": 65,
+   "age_hours": 9.3,
+   "velocity": 24.6,
    "url": "https://www.buynothingday.co.uk/",
    "discussion": "https://news.ycombinator.com/item?id=50663261",
    "new_since_last_run": false
@@ -2399,10 +2399,10 @@
   {
    "id": "50663089",
    "title": "The need for a formally verifiable mainstream programming language",
-   "points": 216,
-   "comments": 204,
-   "age_hours": 9.5,
-   "velocity": 22.8,
+   "points": 218,
+   "comments": 209,
+   "age_hours": 9.8,
+   "velocity": 22.2,
    "url": "https://blainehansen.me/post/mainstream-verifiable-language/",
    "discussion": "https://news.ycombinator.com/item?id=50663089",
    "new_since_last_run": false
@@ -2410,10 +2410,10 @@
   {
    "id": "50657530",
    "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
-   "points": 467,
-   "comments": 547,
-   "age_hours": 21.2,
-   "velocity": 22.0,
+   "points": 470,
+   "comments": 556,
+   "age_hours": 21.6,
+   "velocity": 21.8,
    "url": "https://github.com/antonpictures/youtube-punisher",
    "discussion": "https://news.ycombinator.com/item?id=50657530",
    "new_since_last_run": false
@@ -2421,10 +2421,10 @@
   {
    "id": "50653667",
    "title": "Intel One Mono font (2023)",
-   "points": 551,
+   "points": 553,
    "comments": 262,
-   "age_hours": 28.7,
-   "velocity": 19.2,
+   "age_hours": 29.0,
+   "velocity": 19.1,
    "url": "https://github.com/intel/intel-one-mono",
    "discussion": "https://news.ycombinator.com/item?id=50653667",
    "new_since_last_run": false
@@ -2432,10 +2432,10 @@
   {
    "id": "50657265",
    "title": "AMD-specific fork of llama.cpp",
-   "points": 404,
-   "comments": 97,
-   "age_hours": 21.7,
-   "velocity": 18.7,
+   "points": 406,
+   "comments": 99,
+   "age_hours": 22.0,
+   "velocity": 18.5,
    "url": "https://devnull.land/amd-specific-llama-cpp",
    "discussion": "https://news.ycombinator.com/item?id=50657265",
    "new_since_last_run": false
@@ -2443,10 +2443,10 @@
   {
    "id": "50657645",
    "title": "CTO of 'RansomwareHelp' indicted for wire fraud",
-   "points": 303,
-   "comments": 153,
-   "age_hours": 21.1,
-   "velocity": 14.4,
+   "points": 311,
+   "comments": 154,
+   "age_hours": 21.4,
+   "velocity": 14.5,
    "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
    "discussion": "https://news.ycombinator.com/item?id=50657645",
    "new_since_last_run": false
@@ -2454,9 +2454,9 @@
   {
    "id": "50653477",
    "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
-   "points": 375,
-   "comments": 312,
-   "age_hours": 29.1,
+   "points": 379,
+   "comments": 316,
+   "age_hours": 29.5,
    "velocity": 12.9,
    "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
    "discussion": "https://news.ycombinator.com/item?id=50653477",
@@ -2465,10 +2465,10 @@
   {
    "id": "50664104",
    "title": "Indie web browser Ladybird enters alpha testing",
-   "points": 74,
-   "comments": 28,
-   "age_hours": 6.9,
-   "velocity": 10.8,
+   "points": 80,
+   "comments": 37,
+   "age_hours": 7.2,
+   "velocity": 11.1,
    "url": "https://www.theregister.com/software/2026/11/26/indie-web-browser-ladybird-enters-alpha-testing/5311914",
    "discussion": "https://news.ycombinator.com/item?id=50664104",
    "new_since_last_run": false
@@ -2476,35 +2476,35 @@
   {
    "id": "50655868",
    "title": "Show HN: I wrote an entire Vim manual over 4 years",
-   "points": 240,
-   "comments": 78,
-   "age_hours": 24.1,
-   "velocity": 10.0,
+   "points": 243,
+   "comments": 84,
+   "age_hours": 24.5,
+   "velocity": 9.9,
    "url": "http://themouseless.dev/vim/",
    "discussion": "https://news.ycombinator.com/item?id=50655868",
    "new_since_last_run": false
   },
   {
-   "id": "50652184",
-   "title": "Moat: OpenRouter replacement",
-   "points": 303,
-   "comments": 160,
-   "age_hours": 32.3,
-   "velocity": 9.4,
-   "url": "https://commandcode.ai/moat",
-   "discussion": "https://news.ycombinator.com/item?id=50652184",
-   "new_since_last_run": false
-  },
-  {
    "id": "50649040",
    "title": "The USAID Files",
-   "points": 311,
-   "comments": 384,
-   "age_hours": 39.6,
-   "velocity": 7.9,
+   "points": 318,
+   "comments": 392,
+   "age_hours": 39.9,
+   "velocity": 8.0,
    "url": "https://reclaimthenet.org/usaid-files",
    "discussion": "https://news.ycombinator.com/item?id=50649040",
    "new_since_last_run": false
+  },
+  {
+   "id": "50651863",
+   "title": "An algebraic quantization of gravity from the null cone",
+   "points": 258,
+   "comments": 101,
+   "age_hours": 33.6,
+   "velocity": 7.7,
+   "url": "https://arxiv.org/abs/2611.34924",
+   "discussion": "https://news.ycombinator.com/item?id=50651863",
+   "new_since_last_run": true
   }
  ],
  "instagram_analysis": {
@@ -2879,6 +2879,76 @@
  },
  "topics": [
   {
+   "topic": "iphone black friday deals",
+   "sources": [
+    "Google Trends (US)",
+    "Google Trends (GB/CA/AU)"
+   ],
+   "source_count": 2,
+   "heat": 5.0,
+   "fit": 68,
+   "fit_reasons": [
+    "gta",
+    "gta6"
+   ],
+   "lifecycle": "fading",
+   "lifecycle_confidence": "medium",
+   "window_hint": "Past its peak. Skip unless the idea is evergreen.",
+   "runs_seen": 3,
+   "age_hours": 0.4,
+   "heat_change": -1.0,
+   "signals": {
+    "google_trends_intl": {
+     "traffic": "100+",
+     "geo": "CA"
+    },
+    "google_trends": {
+     "traffic": "1000+"
+    }
+   },
+   "evidence": [
+    {
+     "source": "google_trends_intl",
+     "text": "iphone black friday deals",
+     "url": "https://www.businessinsider.com/guides/deals/best-black-friday-iphone-deals-2026-11-27"
+    },
+    {
+     "source": "google_trends",
+     "text": "gta 6 black friday",
+     "url": "https://mashable.com/entertainment/black-friday-deal-2026-costco-sony-playstation-gift-card-deal"
+    },
+    {
+     "source": "google_trends_intl",
+     "text": "is the stock market open today",
+     "url": "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html"
+    },
+    {
+     "source": "google_trends_news",
+     "text": "This Black Friday shopping hack could help you save $15 on 'GTA 6' for PS5",
+     "url": "https://mashable.com/entertainment/black-friday-deal-2026-costco-sony-playstation-gift-card-deal"
+    },
+    {
+     "source": "google_trends_news",
+     "text": "GTA 6 Gets Its First Official Black Friday Discount",
+     "url": "https://www.imdb.com/news/ni66103001/"
+    },
+    {
+     "source": "google_trends_intl_news",
+     "text": "Is the stock market open on Thanksgiving and Black Friday?",
+     "url": "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html"
+    }
+   ],
+   "risk_flags": [],
+   "saturation": {
+    "label": "contested",
+    "shorts_48h": 25,
+    "shorts_over_10k": 4,
+    "top_views": 42938,
+    "median_views": 1857,
+    "meaning": "Several videos already above 10K. Only with a strong twist."
+   }
+  },
+  {
    "topic": "NFL on Thanksgiving Day",
    "sources": [
     "Wikipedia",
@@ -2886,19 +2956,21 @@
    ],
    "source_count": 2,
    "heat": 9.62,
-   "lifecycle": "rising",
-   "lifecycle_confidence": "low",
-   "window_hint": "Still climbing. Best window to post is now, ideally within about 12-24h.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
-   "heat_change": 5.22,
+   "fit": 0,
+   "fit_reasons": [],
+   "lifecycle": "peaking",
+   "lifecycle_confidence": "medium",
+   "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
+   "runs_seen": 3,
+   "age_hours": 0.4,
+   "heat_change": 0.0,
    "signals": {
     "wikipedia": {
      "views": 25016,
      "growth_x": 3.55
     },
     "youtube": {
-     "views_per_hour": 167144
+     "views_per_hour": 164934
     }
    },
    "evidence": [
@@ -2913,60 +2985,66 @@
      "url": "https://www.youtube.com/watch?v=jXmdND-z0_8"
     }
    ],
-   "risk_flags": [],
-   "saturation": {
-    "label": "crowded",
-    "shorts_48h": 25,
-    "shorts_over_10k": 25,
-    "top_views": 732787,
-    "median_views": 80077,
-    "meaning": "Saturated. Skip or go very niche."
-   }
+   "risk_flags": []
   },
   {
-   "topic": "Roblox",
+   "topic": "supreme court of canada",
    "sources": [
-    "Wikipedia",
-    "YouTube"
+    "Google Trends (US)",
+    "Google Trends (GB/CA/AU)"
    ],
    "source_count": 2,
-   "heat": 8.77,
-   "lifecycle": "rising",
+   "heat": 6.7,
+   "fit": 0,
+   "fit_reasons": [],
+   "lifecycle": "emerging",
    "lifecycle_confidence": "low",
-   "window_hint": "Still climbing. Best window to post is now, ideally within about 12-24h.",
-   "runs_seen": 2,
+   "window_hint": "First sighting. Highest upside but unconfirmed: check it holds on the next scan before committing.",
+   "runs_seen": 1,
    "age_hours": 0.0,
-   "heat_change": 4.36,
+   "heat_change": null,
    "signals": {
-    "wikipedia": {
-     "views": 25663,
-     "growth_x": 3.33
+    "google_trends_intl": {
+     "traffic": "5000+",
+     "geo": "CA"
     },
-    "youtube": {
-     "views_per_hour": 22886
+    "google_trends": {
+     "traffic": "1000+"
     }
    },
    "evidence": [
     {
-     "source": "wikipedia",
-     "text": "Roblox",
-     "url": "https://en.wikipedia.org/wiki/Roblox"
+     "source": "google_trends_intl",
+     "text": "supreme court of canada",
+     "url": "https://www.ctvnews.ca/montreal/article/supreme-court-to-rule-on-quebecs-secularism-law-experts-say-the-stakes-could-not-be-higher/"
     },
     {
-     "source": "youtube",
-     "text": "what if we have knees.                     #forsaken # #roblox #memes #robloxedit #shedletsky #tech",
-     "url": "https://www.youtube.com/watch?v=Vyh_In-ZiAg"
+     "source": "google_trends",
+     "text": "law",
+     "url": "https://www.aljazeera.com/features/2026/11/26/in-canada-quebecs-religious-symbols-ban-faces-a-supreme-court-test"
+    },
+    {
+     "source": "google_trends_news",
+     "text": "In Canada, Quebec’s religious symbols ban faces a Supreme Court test",
+     "url": "https://www.aljazeera.com/features/2026/11/26/in-canada-quebecs-religious-symbols-ban-faces-a-supreme-court-test"
+    },
+    {
+     "source": "google_trends_news",
+     "text": "Canada's Supreme Court to rule on Quebec's law on religious symbols in test of Canadian unity",
+     "url": "https://www.reuters.com/legal/government/canadas-supreme-court-rule-quebecs-law-religious-symbols-test-canadian-unity-2026-11-27/"
+    },
+    {
+     "source": "google_trends_intl_news",
+     "text": "Supreme Court to rule on Quebec’s secularism law. Experts say the stakes could not be higher",
+     "url": "https://www.ctvnews.ca/montreal/article/supreme-court-to-rule-on-quebecs-secularism-law-experts-say-the-stakes-could-not-be-higher/"
+    },
+    {
+     "source": "google_trends_intl_news",
+     "text": "Supreme Court of Canada to deliver landmark ruling on Quebec’s Bill 21 today",
+     "url": "https://www.theglobeandmail.com/canada/article-bill-21-supreme-court-ruling-reaction-quebec-secularism-live-updates/"
     }
    ],
-   "risk_flags": [],
-   "saturation": {
-    "label": "crowded",
-    "shorts_48h": 25,
-    "shorts_over_10k": 25,
-    "top_views": 10553449,
-    "median_views": 2355884,
-    "meaning": "Saturated. Skip or go very niche."
-   }
+   "risk_flags": []
   },
   {
    "topic": "The Edge",
@@ -2976,11 +3054,13 @@
    ],
    "source_count": 2,
    "heat": 6.7,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3014,72 +3094,97 @@
      "url": "https://www.espn.com.au/basketball/gilas/story/_/id/50603122/gilas-pilipinas-sotto-millora-brown-edu"
     }
    ],
+   "risk_flags": []
+  },
+  {
+   "topic": "Roblox",
+   "sources": [
+    "Wikipedia"
+   ],
+   "source_count": 1,
+   "heat": 4.41,
+   "fit": 34,
+   "fit_reasons": [
+    "roblox"
+   ],
+   "lifecycle": "fading",
+   "lifecycle_confidence": "medium",
+   "window_hint": "Past its peak. Skip unless the idea is evergreen.",
+   "runs_seen": 3,
+   "age_hours": 0.4,
+   "heat_change": -4.36,
+   "signals": {
+    "wikipedia": {
+     "views": 25663,
+     "growth_x": 3.33
+    }
+   },
+   "evidence": [
+    {
+     "source": "wikipedia",
+     "text": "Roblox",
+     "url": "https://en.wikipedia.org/wiki/Roblox"
+    }
+   ],
    "risk_flags": [],
    "saturation": {
     "label": "crowded",
     "shorts_48h": 25,
-    "shorts_over_10k": 23,
-    "top_views": 250344,
-    "median_views": 29339,
+    "shorts_over_10k": 25,
+    "top_views": 10553449,
+    "median_views": 2355884,
     "meaning": "Saturated. Skip or go very niche."
    }
   },
   {
-   "topic": "iphone black friday deals",
+   "topic": "benjamin netanyahu",
    "sources": [
-    "Google Trends (US)",
     "Google Trends (GB/CA/AU)"
    ],
-   "source_count": 2,
-   "heat": 6.0,
-   "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
-   "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
-   "heat_change": 0.0,
+   "source_count": 1,
+   "heat": 2.3,
+   "fit": 34,
+   "fit_reasons": [
+    "netanyahu"
+   ],
+   "lifecycle": "rising",
+   "lifecycle_confidence": "medium",
+   "window_hint": "Still climbing. Best window to post is now, ideally within about 12-24h.",
+   "runs_seen": 3,
+   "age_hours": 0.4,
+   "heat_change": 0.3,
    "signals": {
     "google_trends_intl": {
-     "traffic": "500+",
+     "traffic": "200+",
      "geo": "CA"
-    },
-    "google_trends": {
-     "traffic": "2000+"
     }
    },
    "evidence": [
     {
      "source": "google_trends_intl",
-     "text": "iphone black friday deals",
-     "url": "https://www.businessinsider.com/guides/deals/best-black-friday-iphone-deals-2026-11-27"
+     "text": "benjamin netanyahu",
+     "url": "https://www.washingtonpost.com/world/2026/11/26/he-races-unseat-netanyahu-eisenkot-reaches-deal-with-left-wing-party/"
     },
     {
-     "source": "google_trends",
-     "text": "gta 6 black friday",
-     "url": "https://mashable.com/entertainment/black-friday-deal-2026-costco-sony-playstation-gift-card-deal"
+     "source": "google_trends_intl_news",
+     "text": "As he races to unseat Netanyahu, Eisenkot reaches deal with left-wing party",
+     "url": "https://www.washingtonpost.com/world/2026/11/26/he-races-unseat-netanyahu-eisenkot-reaches-deal-with-left-wing-party/"
     },
     {
-     "source": "google_trends",
-     "text": "gma deals and steals",
-     "url": "https://abcnews.com/GMA/Shop/gma-deals-steals-black-friday/story?id=138385185"
-    },
-    {
-     "source": "google_trends_intl",
-     "text": "is the stock market open today",
-     "url": "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html"
-    },
-    {
-     "source": "google_trends_news",
-     "text": "This Black Friday shopping hack could help you save $15 on 'GTA 6' for PS5",
-     "url": "https://mashable.com/entertainment/black-friday-deal-2026-costco-sony-playstation-gift-card-deal"
-    },
-    {
-     "source": "google_trends_news",
-     "text": "GTA 6 Gets Its First Official Black Friday Discount",
-     "url": "https://www.imdb.com/news/ni66103001/"
+     "source": "google_trends_intl_news",
+     "text": "Eisenkot navigates tricky waters as he tests power-sharing with Netanyahu",
+     "url": "https://www.aljazeera.com/news/2026/11/27/eisenkot-navigates-tricky-waters-as-he-tests-power-sharing-with-netanyahu"
     }
    ],
-   "risk_flags": []
+   "risk_flags": [],
+   "saturation": {
+    "label": "crowded",
+    "shorts_48h": 25,
+    "shorts_over_10k": 25,
+    "top_views": 123969,
+    "median_views": 35266,
+    "meaning": "Saturated. Skip or go very niche."
+   }
   },
   {
    "topic": "Wu-Tang Clan",
@@ -3088,11 +3193,13 @@
    ],
    "source_count": 1,
    "heat": 5.17,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3116,11 +3223,13 @@
    ],
    "source_count": 1,
    "heat": 5.01,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3144,11 +3253,13 @@
    ],
    "source_count": 1,
    "heat": 4.99,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3172,11 +3283,13 @@
    ],
    "source_count": 1,
    "heat": 4.88,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3200,11 +3313,13 @@
    ],
    "source_count": 1,
    "heat": 4.84,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3228,11 +3343,13 @@
    ],
    "source_count": 1,
    "heat": 4.83,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3256,11 +3373,13 @@
    ],
    "source_count": 1,
    "heat": 4.8,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3284,11 +3403,13 @@
    ],
    "source_count": 1,
    "heat": 4.77,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3312,11 +3433,13 @@
    ],
    "source_count": 1,
    "heat": 4.7,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3340,11 +3463,13 @@
    ],
    "source_count": 1,
    "heat": 4.69,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3368,11 +3493,13 @@
    ],
    "source_count": 1,
    "heat": 4.69,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3396,11 +3523,13 @@
    ],
    "source_count": 1,
    "heat": 4.62,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3424,11 +3553,13 @@
    ],
    "source_count": 1,
    "heat": 4.6,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3452,11 +3583,13 @@
    ],
    "source_count": 1,
    "heat": 4.6,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3480,11 +3613,13 @@
    ],
    "source_count": 1,
    "heat": 4.59,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3508,11 +3643,13 @@
    ],
    "source_count": 1,
    "heat": 4.58,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3536,11 +3673,13 @@
    ],
    "source_count": 1,
    "heat": 4.58,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3564,11 +3703,13 @@
    ],
    "source_count": 1,
    "heat": 4.51,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3592,11 +3733,13 @@
    ],
    "source_count": 1,
    "heat": 4.49,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3620,11 +3763,13 @@
    ],
    "source_count": 1,
    "heat": 4.48,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3648,11 +3793,13 @@
    ],
    "source_count": 1,
    "heat": 4.48,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3676,11 +3823,13 @@
    ],
    "source_count": 1,
    "heat": 4.48,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3704,11 +3853,13 @@
    ],
    "source_count": 1,
    "heat": 4.47,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3732,11 +3883,13 @@
    ],
    "source_count": 1,
    "heat": 4.47,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3760,11 +3913,13 @@
    ],
    "source_count": 1,
    "heat": 4.46,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3788,11 +3943,13 @@
    ],
    "source_count": 1,
    "heat": 4.46,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3816,11 +3973,13 @@
    ],
    "source_count": 1,
    "heat": 4.45,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3844,11 +4003,13 @@
    ],
    "source_count": 1,
    "heat": 4.44,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3872,11 +4033,13 @@
    ],
    "source_count": 1,
    "heat": 4.44,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3900,11 +4063,13 @@
    ],
    "source_count": 1,
    "heat": 4.41,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3928,11 +4093,13 @@
    ],
    "source_count": 1,
    "heat": 4.37,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3956,11 +4123,13 @@
    ],
    "source_count": 1,
    "heat": 4.36,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -3984,11 +4153,13 @@
    ],
    "source_count": 1,
    "heat": 4.35,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -4012,11 +4183,13 @@
    ],
    "source_count": 1,
    "heat": 4.34,
+   "fit": 0,
+   "fit_reasons": [],
    "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
+   "lifecycle_confidence": "medium",
    "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
+   "runs_seen": 3,
+   "age_hours": 0.4,
    "heat_change": 0.0,
    "signals": {
     "wikipedia": {
@@ -4032,69 +4205,568 @@
     }
    ],
    "risk_flags": []
-  },
-  {
-   "topic": "Nigel Starmer-Smith",
-   "sources": [
-    "Wikipedia"
-   ],
-   "source_count": 1,
-   "heat": 4.31,
-   "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
-   "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
-   "heat_change": 0.0,
-   "signals": {
-    "wikipedia": {
-     "views": 20194,
-     "growth_x": 2.86
-    }
-   },
-   "evidence": [
-    {
-     "source": "wikipedia",
-     "text": "Nigel Starmer-Smith",
-     "url": "https://en.wikipedia.org/wiki/Nigel_Starmer-Smith"
-    }
-   ],
-   "risk_flags": []
-  },
-  {
-   "topic": "The Amazing Race 39",
-   "sources": [
-    "Wikipedia"
-   ],
-   "source_count": 1,
-   "heat": 4.3,
-   "lifecycle": "peaking",
-   "lifecycle_confidence": "low",
-   "window_hint": "At or near the top. Only worth it with a fresh angle; the crowd is arriving.",
-   "runs_seen": 2,
-   "age_hours": 0.0,
-   "heat_change": 0.0,
-   "signals": {
-    "wikipedia": {
-     "views": 19981,
-     "growth_x": 2.83
-    }
-   },
-   "evidence": [
-    {
-     "source": "wikipedia",
-     "text": "The Amazing Race 39",
-     "url": "https://en.wikipedia.org/wiki/The_Amazing_Race_39"
-    }
-   ],
-   "risk_flags": []
   }
  ],
  "topic_meta": {
-  "history_depth_hours": 94.3,
+  "history_depth_hours": 94.6,
   "typical_lifetime_hours": 0.2,
   "note": "Lifecycle needs history: until a topic has been seen on 3+ scans its stage is a first guess.",
   "saturation": "ok"
+ },
+ "competitor_outliers": {
+  "accounts": [
+   {
+    "handle": "kuzamoves",
+    "platform": "youtube",
+    "followers": 70100,
+    "reels_sampled": 40,
+    "median_views": 69366,
+    "outliers": 14
+   },
+   {
+    "handle": "mrwooper_minecraft",
+    "platform": "youtube",
+    "followers": 168000,
+    "reels_sampled": 40,
+    "median_views": 568250,
+    "outliers": 2
+   },
+   {
+    "handle": "yapmaps",
+    "platform": "youtube",
+    "followers": 9280,
+    "reels_sampled": 40,
+    "median_views": 9314,
+    "outliers": 5
+   },
+   {
+    "handle": "hisclipps",
+    "platform": "youtube",
+    "followers": 4310,
+    "reels_sampled": 13,
+    "median_views": 164937,
+    "outliers": 2
+   },
+   {
+    "handle": "geospacez",
+    "platform": "youtube",
+    "followers": 7120,
+    "reels_sampled": 40,
+    "median_views": 67390,
+    "outliers": 8
+   },
+   {
+    "handle": "darkexplain-yt",
+    "platform": "youtube",
+    "followers": 20400,
+    "reels_sampled": 28,
+    "median_views": 69626,
+    "outliers": 6
+   },
+   {
+    "handle": "profetierra",
+    "platform": "youtube",
+    "followers": 109000,
+    "reels_sampled": 40,
+    "median_views": 260220,
+    "outliers": 7
+   },
+   {
+    "handle": "omduckked",
+    "platform": "youtube",
+    "followers": 522000,
+    "reels_sampled": 32,
+    "median_views": 2907779,
+    "outliers": 3
+   },
+   {
+    "handle": "asp_fc",
+    "platform": "youtube",
+    "followers": 986000,
+    "reels_sampled": 39,
+    "median_views": 1473334,
+    "outliers": 0
+   },
+   {
+    "handle": "wantedlvlgta",
+    "platform": "youtube",
+    "followers": 161,
+    "reels_sampled": 22,
+    "median_views": 2420,
+    "outliers": 8
+   }
+  ],
+  "outlier_rule": ">= 3.0x the account's own median and >= 5000 views",
+  "scraped_at": null,
+  "outliers": [
+   {
+    "account": "darkexplain-yt",
+    "id": "D1IOZS6E55U",
+    "date": "2026-10-27",
+    "views": 8238528,
+    "outlier_x": 118.3,
+    "hook": "WORLD’S FASTEST ANIMAL! 💀⚡#shorts #animals #speed #earth",
+    "hashtags": [
+     "#animals",
+     "#ch",
+     "#earth",
+     "#fastestanimal",
+     "#peregrinefalcon",
+     "#speed"
+    ],
+    "likes": 125247,
+    "comments": 713,
+    "views_per_follower": 403.8,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=D1IOZS6E55U"
+   },
+   {
+    "account": "yapmaps",
+    "id": "syoxrOgQKgE",
+    "date": "2026-11-25",
+    "views": 726036,
+    "outlier_x": 78.0,
+    "hook": "What if a Fortnite match never ended?",
+    "hashtags": [
+     "#fortnite",
+     "#fortniteclips",
+     "#fortnitecreative",
+     "#fortnitepro",
+     "#scrims",
+     "#shorts",
+     "#yapmaps"
+    ],
+    "likes": 18172,
+    "comments": 101,
+    "views_per_follower": 78.2,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=syoxrOgQKgE"
+   },
+   {
+    "account": "kuzamoves",
+    "id": "5-2tozb3JPs",
+    "date": "2026-11-13",
+    "views": 3791082,
+    "outlier_x": 54.7,
+    "hook": "The REAL Reason Flint Never Took Off His Shoes 😭💔",
+    "hashtags": [],
+    "likes": 112725,
+    "comments": 633,
+    "views_per_follower": 54.1,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=5-2tozb3JPs"
+   },
+   {
+    "account": "wantedlvlgta",
+    "id": "d6kfHmhrk5I",
+    "date": "2026-11-25",
+    "views": 125934,
+    "outlier_x": 52.0,
+    "hook": "You Won't Believe How Many Fortnite Maps Fit In GTA 6 🗺️",
+    "hashtags": [],
+    "likes": 1196,
+    "comments": 125,
+    "views_per_follower": 782.2,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=d6kfHmhrk5I"
+   },
+   {
+    "account": "kuzamoves",
+    "id": "tqhNm6vjfmU",
+    "date": "2026-11-14",
+    "views": 2204656,
+    "outlier_x": 31.8,
+    "hook": "The REAL Reason Hiccup Was Never Attacked by the Dragon 🐉😱",
+    "hashtags": [],
+    "likes": 75705,
+    "comments": 122,
+    "views_per_follower": 31.5,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=tqhNm6vjfmU"
+   },
+   {
+    "account": "kuzamoves",
+    "id": "id5k0b0jMsQ",
+    "date": "2026-11-25",
+    "views": 2142003,
+    "outlier_x": 30.9,
+    "hook": "I Tested Lucia’s Patience in GTA 6 😭",
+    "hashtags": [],
+    "likes": 31938,
+    "comments": 61,
+    "views_per_follower": 30.6,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=id5k0b0jMsQ"
+   },
+   {
+    "account": "wantedlvlgta",
+    "id": "l3Nxb7-L87g",
+    "date": "2026-11-25",
+    "views": 67173,
+    "outlier_x": 27.8,
+    "hook": "Real Florida Could Fit GTA 6 Over 1,000 Times 😳",
+    "hashtags": [],
+    "likes": 475,
+    "comments": 12,
+    "views_per_follower": 417.2,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=l3Nxb7-L87g"
+   },
+   {
+    "account": "kuzamoves",
+    "id": "ImtpOpBf6jo",
+    "date": "2026-11-24",
+    "views": 1519526,
+    "outlier_x": 21.9,
+    "hook": "The Real Reason Groot Said I Love You 😭💚",
+    "hashtags": [],
+    "likes": 47490,
+    "comments": 102,
+    "views_per_follower": 21.7,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=ImtpOpBf6jo"
+   },
+   {
+    "account": "yapmaps",
+    "id": "DgbyVEvenuA",
+    "date": "2026-02-03",
+    "views": 192278,
+    "outlier_x": 20.6,
+    "hook": "START GRINDING NOW!",
+    "hashtags": [],
+    "likes": 3391,
+    "comments": 34,
+    "views_per_follower": 20.7,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=DgbyVEvenuA"
+   },
+   {
+    "account": "wantedlvlgta",
+    "id": "24JSdw2qnBo",
+    "date": "2026-11-26",
+    "views": 44331,
+    "outlier_x": 18.3,
+    "hook": "GTA 6 vs Red Dead 2 Map: It's Not Even Close 😳",
+    "hashtags": [],
+    "likes": 414,
+    "comments": 26,
+    "views_per_follower": 275.3,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=24JSdw2qnBo"
+   },
+   {
+    "account": "yapmaps",
+    "id": "mnsUX9vx3KI",
+    "date": "2026-01-05",
+    "views": 163467,
+    "outlier_x": 17.6,
+    "hook": "HIT UNREAL RIGHT NOW!",
+    "hashtags": [],
+    "likes": 2452,
+    "comments": 26,
+    "views_per_follower": 17.6,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=mnsUX9vx3KI"
+   },
+   {
+    "account": "kuzamoves",
+    "id": "UsvoKL5J4Ws",
+    "date": "2026-11-13",
+    "views": 1192055,
+    "outlier_x": 17.2,
+    "hook": "🦊🍖 What Do Carnivores ACTUALLY Eat in Zootopia! 😳",
+    "hashtags": [],
+    "likes": 33922,
+    "comments": 308,
+    "views_per_follower": 17.0,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=UsvoKL5J4Ws"
+   },
+   {
+    "account": "kuzamoves",
+    "id": "ipaIiNsbCCg",
+    "date": "2026-11-21",
+    "views": 1036913,
+    "outlier_x": 14.9,
+    "hook": "Toothless Was BREAKING the Rules This Whole Time 😭🐉",
+    "hashtags": [],
+    "likes": 24530,
+    "comments": 136,
+    "views_per_follower": 14.8,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=ipaIiNsbCCg"
+   },
+   {
+    "account": "kuzamoves",
+    "id": "IoHCRWZP8WE",
+    "date": "2026-11-25",
+    "views": 816707,
+    "outlier_x": 11.8,
+    "hook": "What If Jason NEVER Picks Up Lucia 💀",
+    "hashtags": [],
+    "likes": 15428,
+    "comments": 52,
+    "views_per_follower": 11.7,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=IoHCRWZP8WE"
+   },
+   {
+    "account": "wantedlvlgta",
+    "id": "VReJHGjyPCs",
+    "date": "2026-11-23",
+    "views": 27992,
+    "outlier_x": 11.6,
+    "hook": "GTA 5 Only Fills HALF of GTA 6's Map 😳 #gta6 #shorts #gta5",
+    "hashtags": [
+     "#grandtheftauto",
+     "#gta4",
+     "#gta5",
+     "#gta6",
+     "#gta6map",
+     "#gtasecrets",
+     "#gtavi",
+     "#leonida",
+     "#rdr2",
+     "#reddeadredemption2",
+     "#rockstargames",
+     "#shorts"
+    ],
+    "likes": 371,
+    "comments": 29,
+    "views_per_follower": 173.9,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=VReJHGjyPCs"
+   },
+   {
+    "account": "wantedlvlgta",
+    "id": "nDPQFBddolQ",
+    "date": "2026-11-22",
+    "views": 28017,
+    "outlier_x": 11.6,
+    "hook": "How Long Does It Take to Cross GTA 6? 🚗 #gta6 #shorts #gta5 #gtasecrets",
+    "hashtags": [
+     "#gta5",
+     "#gta6",
+     "#gtasecrets",
+     "#shorts"
+    ],
+    "likes": 550,
+    "comments": 25,
+    "views_per_follower": 174.0,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=nDPQFBddolQ"
+   },
+   {
+    "account": "kuzamoves",
+    "id": "q10tC917uEQ",
+    "date": "2026-11-15",
+    "views": 772650,
+    "outlier_x": 11.1,
+    "hook": "Deadpool’s Suit Has a SECRET Healing Factor! 😱🔥",
+    "hashtags": [],
+    "likes": 23439,
+    "comments": 61,
+    "views_per_follower": 11.0,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=q10tC917uEQ"
+   },
+   {
+    "account": "wantedlvlgta",
+    "id": "enp3WQGsFTQ",
+    "date": "2026-11-23",
+    "views": 26445,
+    "outlier_x": 10.9,
+    "hook": "How Long Does It Take to WALK Across GTA 6? 🚶 #gta6 #shorts  #gta5 #gtasecrets",
+    "hashtags": [
+     "#gta5",
+     "#gta6",
+     "#gtasecrets",
+     "#shorts"
+    ],
+    "likes": 488,
+    "comments": 20,
+    "views_per_follower": 164.3,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=enp3WQGsFTQ"
+   },
+   {
+    "account": "hisclipps",
+    "id": "S0V_4cza_fw",
+    "date": "2026-11-26",
+    "views": 1661724,
+    "outlier_x": 10.1,
+    "hook": "What If You Built A Snake That Can Fly!? 😳🐍",
+    "hashtags": [
+     "#shorts"
+    ],
+    "likes": 40845,
+    "comments": 273,
+    "views_per_follower": 385.6,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=S0V_4cza_fw"
+   },
+   {
+    "account": "darkexplain-yt",
+    "id": "Ks4F-acpPWI",
+    "date": "2026-11-01",
+    "views": 662399,
+    "outlier_x": 9.5,
+    "hook": "THESE ANIMALS CAN SURVIVE WITHOUT WATER FOR YEARS! 💀🏜️ #earth #animals #darkcosmic #animalfacts",
+    "hashtags": [
+     "#animalfacts",
+     "#animals",
+     "#darkcosmic",
+     "#earth"
+    ],
+    "likes": 7788,
+    "comments": 42,
+    "views_per_follower": 32.5,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=Ks4F-acpPWI"
+   },
+   {
+    "account": "wantedlvlgta",
+    "id": "lD0kiUyyqXg",
+    "date": "2026-11-20",
+    "views": 19629,
+    "outlier_x": 8.1,
+    "hook": "Stop Saying GTA 6 Has No Secrets! 💀 #gta6 #shorts  #gta5 #gtasecrets",
+    "hashtags": [
+     "#gta5",
+     "#gta6",
+     "#gtasecrets",
+     "#shorts"
+    ],
+    "likes": 175,
+    "comments": 12,
+    "views_per_follower": 121.9,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=lD0kiUyyqXg"
+   },
+   {
+    "account": "kuzamoves",
+    "id": "ed2MQboZyVw",
+    "date": "2026-11-25",
+    "views": 543350,
+    "outlier_x": 7.8,
+    "hook": "What Happens If You Return to the Old House 😳🔥",
+    "hashtags": [],
+    "likes": 10936,
+    "comments": 39,
+    "views_per_follower": 7.8,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=ed2MQboZyVw"
+   },
+   {
+    "account": "yapmaps",
+    "id": "Tq0YEjxMABA",
+    "date": "2026-11-24",
+    "views": 70550,
+    "outlier_x": 7.6,
+    "hook": "Everyone's offline",
+    "hashtags": [
+     "#boxfights",
+     "#fortnite",
+     "#fortnitecompetitive",
+     "#fortnitecreative",
+     "#shorts",
+     "#yapmaps",
+     "#zonewars"
+    ],
+    "likes": 1535,
+    "comments": 16,
+    "views_per_follower": 7.6,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=Tq0YEjxMABA"
+   },
+   {
+    "account": "kuzamoves",
+    "id": "fBfcZiF-mYE",
+    "date": "2026-11-25",
+    "views": 519690,
+    "outlier_x": 7.5,
+    "hook": "What Happens If You Visit Mandy Again 😳",
+    "hashtags": [],
+    "likes": 8919,
+    "comments": 15,
+    "views_per_follower": 7.4,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=fBfcZiF-mYE"
+   },
+   {
+    "account": "kuzamoves",
+    "id": "ylZ3tW_Nfpo",
+    "date": "2026-11-16",
+    "views": 513385,
+    "outlier_x": 7.4,
+    "hook": "Vanellope Was Becoming TURBO This Whole Time! 😱",
+    "hashtags": [],
+    "likes": 13283,
+    "comments": 51,
+    "views_per_follower": 7.3,
+    "platform": "youtube",
+    "url": "https://www.youtube.com/watch?v=ylZ3tW_Nfpo"
+   }
+  ],
+  "traits_in_outliers": {
+   "follow_or_name_ask": {
+    "in_outliers": 7,
+    "in_all_reels": 35,
+    "outlier_share_pct": 20
+   },
+   "what_if": {
+    "in_outliers": 6,
+    "in_all_reels": 42,
+    "outlier_share_pct": 14
+   },
+   "question_in_hook": {
+    "in_outliers": 13,
+    "in_all_reels": 84,
+    "outlier_share_pct": 15
+   }
+  },
+  "common_outlier_hashtags": [
+   {
+    "tag": "#shorts",
+    "n": 19
+   },
+   {
+    "tag": "#countryballs",
+    "n": 7
+   },
+   {
+    "tag": "#shortvideo",
+    "n": 6
+   },
+   {
+    "tag": "#earth",
+    "n": 5
+   },
+   {
+    "tag": "#animals",
+    "n": 4
+   },
+   {
+    "tag": "#gta5",
+    "n": 4
+   },
+   {
+    "tag": "#gta6",
+    "n": 4
+   },
+   {
+    "tag": "#gtasecrets",
+    "n": 4
+   },
+   {
+    "tag": "#comedy",
+    "n": 3
+   },
+   {
+    "tag": "#funny",
+    "n": 3
+   }
+  ]
  },
  "format_playbook": {
   "how_to_use": "Write each idea package in the style of these winners; avoid the patterns that lag.",
@@ -4142,8 +4814,66 @@
    "#lebron",
    "#gaming"
   ],
-  "own_sample_size": 18
+  "own_sample_size": 18,
+  "competitor_outlier_hooks": [
+   {
+    "hook": "WORLD’S FASTEST ANIMAL! 💀⚡#shorts #animals #speed #earth",
+    "views": 8238528,
+    "outlier_x": 118.3,
+    "account": "darkexplain-yt"
+   },
+   {
+    "hook": "What if a Fortnite match never ended?",
+    "views": 726036,
+    "outlier_x": 78.0,
+    "account": "yapmaps"
+   },
+   {
+    "hook": "The REAL Reason Flint Never Took Off His Shoes 😭💔",
+    "views": 3791082,
+    "outlier_x": 54.7,
+    "account": "kuzamoves"
+   },
+   {
+    "hook": "You Won't Believe How Many Fortnite Maps Fit In GTA 6 🗺️",
+    "views": 125934,
+    "outlier_x": 52.0,
+    "account": "wantedlvlgta"
+   },
+   {
+    "hook": "The REAL Reason Hiccup Was Never Attacked by the Dragon 🐉😱",
+    "views": 2204656,
+    "outlier_x": 31.8,
+    "account": "kuzamoves"
+   },
+   {
+    "hook": "I Tested Lucia’s Patience in GTA 6 😭",
+    "views": 2142003,
+    "outlier_x": 30.9,
+    "account": "kuzamoves"
+   },
+   {
+    "hook": "Real Florida Could Fit GTA 6 Over 1,000 Times 😳",
+    "views": 67173,
+    "outlier_x": 27.8,
+    "account": "wantedlvlgta"
+   },
+   {
+    "hook": "The Real Reason Groot Said I Love You 😭💚",
+    "views": 1519526,
+    "outlier_x": 21.9,
+    "account": "kuzamoves"
+   }
+  ],
+  "competitor_common_hashtags": [
+   "#shorts",
+   "#countryballs",
+   "#shortvideo",
+   "#earth",
+   "#animals",
+   "#gta5"
+  ]
  },
  "errors": [],
- "took_seconds": 6.6
+ "took_seconds": 11.6
 }
