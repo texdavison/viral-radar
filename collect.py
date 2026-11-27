@@ -300,7 +300,7 @@ def _yt_video(v: dict, now: datetime) -> dict:
 
 
 def collect_youtube(cfg: dict, errors: list) -> dict:
-    key = os.environ.get("YOUTUBE_API_KEY")
+    key = (os.environ.get("YOUTUBE_API_KEY") or "").strip()
     if not key:
         return {"skipped": "no YOUTUBE_API_KEY in .env"}
     now = now_utc()
@@ -473,7 +473,7 @@ def youtube_reel_rows(videos: dict, max_seconds: int = 180) -> list[dict]:
 def collect_youtube_competitors(cfg: dict, errors: list) -> list[dict]:
     """Recent Shorts from channels listed in config.json competitors.youtube_handles (like "@somechannel").
     About 3 quota units per channel. Feeds the same outlier finder as the Instagram accounts."""
-    key = os.environ.get("YOUTUBE_API_KEY")
+    key = (os.environ.get("YOUTUBE_API_KEY") or "").strip()
     handles = cfg.get("youtube_handles", [])
     if not key or not handles:
         return []
@@ -510,7 +510,7 @@ def _load_json(path: Path, default):
 def collect_saturation(rows: list[dict], cfg: dict, errors: list) -> str:
     """For the top few topics, count competing Shorts from the last 48h. A search costs 100 YouTube quota
     units, so only the top topics are checked and each result is cached for a few hours (.cache/, not committed)."""
-    key = os.environ.get("YOUTUBE_API_KEY")
+    key = (os.environ.get("YOUTUBE_API_KEY") or "").strip()
     if not key:
         return "skipped: no YOUTUBE_API_KEY in .env (needed to count competing Shorts)"
     ttl_s = cfg.get("saturation_ttl_hours", 6) * 3600
