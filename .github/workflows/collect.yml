@@ -1,0 +1,54 @@
+name: collect-signals
+
+# Runs the collector in the cloud every 3 hours so it no longer depends on a laptop being awake.
+# The cloud scan reads signals/latest.json from this repo.
+on:
+  schedule:
+    - cron: "11 */3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect-signals
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Keeps the 6-hour YouTube saturation cache between runs so the free quota lasts.
+      - uses: actions/cache@v4
+        with:
+          path: .cache
+          key: saturation-${{ github.run_id }}
+          restore-keys: saturation-
+
+      - name: Run tests
+        run: python -m unittest discover -s tests
+
+      - name: Collect signals
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python collect.py
+
+      - name: Commit and push signals
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add signals
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "signals $(date -u +'%Y-%m-%d %H:%M')"
+            git pull --rebase --quiet
+            git push
+          fi

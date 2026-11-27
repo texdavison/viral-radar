@@ -573,10 +573,16 @@ def add_momentum(current: dict, previous: dict | None) -> None:
 
 # ---------------------------------------------------------------- main
 
-def prune_history(days: int) -> None:
-    cutoff = time.time() - days * 86400
+def prune_history(days: int, now: datetime | None = None) -> None:
+    """Delete snapshots older than `days`, judged by the timestamp in the file name (YYYYMMDD-HHMM.json).
+    File modified times can't be trusted: a fresh git checkout, as on GitHub Actions, sets them all to 'now'."""
+    cutoff = (now or now_utc()) - timedelta(days=days)
     for f in HISTORY.glob("*.json"):
-        if f.stat().st_mtime < cutoff:
+        try:
+            taken = datetime.strptime(f.stem, "%Y%m%d-%H%M").replace(tzinfo=timezone.utc)
+        except ValueError:
+            continue                      # not one of ours: leave it alone
+        if taken < cutoff:
             f.unlink(missing_ok=True)
 
 

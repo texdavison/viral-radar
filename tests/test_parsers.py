@@ -75,5 +75,20 @@ class T(unittest.TestCase):
         self.assertNotIn("type_at_cta", a["caption_features"])   # unused feature: no stats
         self.assertIsNone(collect.analyze_instagram({"posts": posts[:2]}))   # too few reels
 
+    def test_prune_history_uses_file_names_not_mtimes(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            hist = Path(d)
+            for name in ("20261110-1200.json", "20261120-1200.json", "20261123-1200.json", "notes.json"):
+                (hist / name).write_text("{}")          # every file has a brand-new mtime
+            old = collect.HISTORY
+            collect.HISTORY = hist
+            try:
+                collect.prune_history(7, datetime(2026, 11, 24, 12, tzinfo=timezone.utc))
+            finally:
+                collect.HISTORY = old
+            self.assertEqual(sorted(p.name for p in hist.glob("*.json")),
+                             ["20261120-1200.json", "20261123-1200.json", "notes.json"])
+
 if __name__ == "__main__":
     unittest.main()
