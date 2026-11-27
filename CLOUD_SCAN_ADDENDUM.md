@@ -11,6 +11,11 @@ EXTRA SIGNALS (new in signals/latest.json; all optional)
    - topic, sources[], source_count: how many independent sources show it (Google Trends US, Google
      Trends GB/CA/AU, Wikipedia, Hacker News, Reddit, YouTube). 2+ sources is a much stronger signal
      than one spike; 3+ is rare and valuable.
+   - fit (0-100) and fit_reasons[]: how closely the topic touches subjects this account has already won with
+     (hashtags of its winning reels plus a few configured keywords). 0 means nothing in common with past
+     winners, not that it is bad: it is just unproven for this account, so require stronger evidence
+     elsewhere (more sources, rising, open competition). 68+ means a strong match; say which fit_reasons in
+     the idea's why_now. Topics are already sorted multi-source first, then by fit, then heat.
    - lifecycle: emerging | rising | peaking | fading, with lifecycle_confidence (low until the topic has
      been seen on 3+ scans; topic_meta.history_depth_hours says how much history exists). window_hint is
      advice for that stage. Prefer rising and emerging; avoid fading unless the idea is evergreen. Treat
@@ -40,10 +45,14 @@ EXTRA SIGNALS (new in signals/latest.json; all optional)
 3. format_playbook: a short summary of what has worked (own winner hooks and flop hooks, traits that beat or
    lag the median, best hashtags, and competitor outlier hooks when present). Use it for item 5 below.
 
-4. competitor_outliers (only when competitor accounts are configured): reels or Shorts from similar accounts
-   that beat their own account's normal by 3x+ (outlier_x), with hook, hashtags and link. Use them as proof
-   that a format or topic works for other creators, and cite the link. Never copy a hook word for word;
-   borrow the structure.
+4. competitor_outliers: Shorts from similar YouTube channels (kuzamoves, yapmaps, wantedlvlgta, geospacez,
+   darkexplain-yt and others; each row has platform and account) that beat their own channel's normal by 3x+
+   (outlier_x), with hook, hashtags, views and link. accounts[] shows each channel's median views, so an outlier
+   is relative to that channel, not absolute. traits_in_outliers counts caption traits among the outliers. Use
+   them as proof that a format or topic works for other creators, and cite the link. Never copy a hook word for
+   word; borrow the structure. Strong pattern right now: size comparisons of game maps against real places
+   ("Fortnite maps fit in GTA 6", "Real Florida could fit GTA 6 1,000 times") and "what if" scenarios inside a
+   famous game. Treat these as candidates to test, not as proven for this account.
 
 5. Other new lists: wikipedia[] (day-over-day spikes; growth_is_lower_bound true means the real spike is at
    least that big; skip obituaries), hackernews[] (tech-heavy; only for "how X works" ideas),
@@ -89,4 +98,9 @@ WHERE TO WRITE IT (the dashboard already renders these fields, so use them):
     - competitor_notes: for each competitor_outliers entry [{source: account, url, what: its hook, why: "Nx its
       account's median"}], or leave it as before when competitor_outliers is absent.
     - near_misses as before.
+
+LEARNING LOOP: each scan, compare instagram.posts with saved ideas. When a reel's caption clearly matches a
+saved idea (same subject and same hook), set that idea's status to "made" and set idea_id on the matching
+posts doc, so predicted scores can later be compared with real results. Only link when the match is obvious;
+never guess. In calibration_note, say how many reels are linked and what the linked ones show, or "none linked".
 ```

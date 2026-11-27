@@ -518,7 +518,7 @@ def collect_saturation(rows: list[dict], cfg: dict, errors: list) -> str:
     cache = _load_json(cache_path, {})
     now = now_utc()
     after = iso(now - timedelta(hours=48))
-    for row in rows[: cfg.get("saturation_topics", 3)]:
+    for row in topic_engine.pick_saturation_targets(rows, cfg.get("saturation_topics", 3)):
         ck = row["topic"].lower()
         hit = cache.get(ck)
         if hit and (now - datetime.fromisoformat(hit["at"].replace("Z", "+00:00"))).total_seconds() < ttl_s:
@@ -618,6 +618,10 @@ def main() -> int:
     clusters = topic_engine.build_clusters(signals)
     topic_engine.update_history(store, clusters, started)
     meta = topic_engine.attach_lifecycle(clusters, store, started)
+    pcfg = cfg.get("profile", {})
+    topic_engine.attach_fit(clusters, topic_engine.build_profile(
+        signals["instagram"].get("posts", []), (analysis or {}).get("winners", []),
+        pcfg.get("extra_keywords", []), pcfg.get("avoid_keywords", [])))
     ranked = topic_engine.rank_topics(clusters, tcfg.get("max_topics", 40))
     meta["saturation"] = collect_saturation(ranked, tcfg, errors)
     signals["topics"], signals["topic_meta"] = ranked, meta

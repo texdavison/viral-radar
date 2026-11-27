@@ -22,7 +22,14 @@
   "competitors": {
     "outlier_x": 3.0,
     "min_views": 5000,
-    "youtube_handles": []
+    "youtube_handles": [
+      "@kuzamoves", "@mrwooper_minecraft", "@yapmaps", "@hisclipps", "@geospacez",
+      "@darkexplain-yt", "@profetierra", "@omduckked", "@asp_fc", "@wantedlvlgta"
+    ]
+  },
+  "profile": {
+    "extra_keywords": ["gta", "fortnite", "roblox", "minecraft", "nvidia", "spotify", "marvel", "avengers", "nintendo", "xbox", "playstation"],
+    "avoid_keywords": []
   },
   "hackernews": {
     "enabled": true,

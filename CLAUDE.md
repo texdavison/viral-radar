@@ -52,8 +52,11 @@ Viral Idea Radar dashboard (https://claude.ai/artifact/98fJKAJz1xUpqrpcQ9TxKo).
    workflows in a public repo after 60 days with no repo activity: if the file stops updating, re-enable the
    workflow in the Actions tab. `run.ps1` still works for a manual local run (it pulls first).
 7. Optional, any time: help Tex create a YouTube Data API key and put it in `.env`.
-   Quota math: each run uses about 605 units (4 charts + 6 searches at 100 + 1 lookup); 8 runs/day is
-   about 4,840 of the free 10,000.
+   Quota math: each run uses about 750-950 units (4 charts + 6 keyword searches at 100 + up to 3 saturation
+   searches at 100, cached 6h + about 30 for the ten competitor channels); 8 runs/day is roughly 6,000-7,500 of
+   the free 10,000. Manual dry runs also spend quota, so don't spam them. Quota resets at midnight Pacific.
+   Topics also get a `fit` score (`topics.py`): the account's winning-reel hashtags plus
+   `config.json` > `profile.extra_keywords`, minus `profile.avoid_keywords`. Saturation checks go to fitting topics first.
 
 ## Instagram interim: manual stats (`ig_manual.json`)
 Until the API token exists, `collect.py` reads `ig_manual.json` (public views/likes/comments scraped

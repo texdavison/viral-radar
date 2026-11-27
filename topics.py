@@ -312,13 +312,62 @@ def saturation_summary(rows: list[dict]) -> dict:
                         "crowded": "Saturated. Skip or go very niche."}[label]}
 
 
+# ---------------------------------------------------------------- fit with this account
+
+# Hashtags every account uses; they say nothing about the subject.
+GENERIC_TAGS = {"fyp", "funny", "viral", "explore", "foryou", "reels", "3danimation", "animation", "whatif",
+                "relatable", "didyouknow", "explained", "humor", "satire", "genzhumor", "genz", "memes",
+                "funfacts", "sendthis", "howitworks", "gaming", "gamer"}
+
+
+def build_profile(posts: list[dict], winner_ids: list[str], extra_keywords=(), avoid_keywords=()) -> dict:
+    """What this account has won with: the subject hashtags of its winning reels plus keywords from config."""
+    tags: set[str] = set()
+    wins = set(winner_ids)
+    for p in posts:
+        if p.get("id") in wins:
+            for t in re.findall(r"#(\w+)", (p.get("caption") or "").lower()):
+                if t not in GENERIC_TAGS and len(t) >= 4:
+                    tags.add(t)
+    return {"keywords": sorted(tags | {k.lower() for k in extra_keywords if k}),
+            "avoid": sorted({k.lower() for k in avoid_keywords if k})}
+
+
+def _hit(keyword: str, toks: set[str], compact: str) -> bool:
+    # A short word must match a whole token ("lucia" must not fire inside "Luciano");
+    # a long hashtag like "jensenhuang" also matches the words run together ("Jensen Huang").
+    runs_together = len(keyword) >= 7 or any(ch.isdigit() for ch in keyword)   # "gta6" must match "GTA 6"
+    return keyword in toks or (runs_together and keyword in compact)
+
+
+def attach_fit(clusters: list[dict], profile: dict) -> None:
+    """fit 0-100: how many of this account's proven subjects the topic touches (3 hits = 100).
+    fit_reasons lists them so the number is explainable. Avoided keywords take 50 points off."""
+    for c in clusters:
+        # Only the topic's own words count: its label, trend headlines and Wikipedia title. Hacker News, Reddit and
+        # YouTube titles are attached by loose word overlap, so a stray "GTA" in one must not make a topic a fit.
+        own = [e["text"] for e in c["evidence"] if e.get("source") not in ("hackernews", "reddit", "youtube")]
+        text = " ".join([c["label"]] + own).lower()
+        toks, compact = set(tokens(text)), re.sub(r"[^a-z0-9]", "", text)
+        hits = [k for k in profile.get("keywords", []) if _hit(k, toks, compact)]
+        bad = [k for k in profile.get("avoid", []) if _hit(k, toks, compact)]
+        c["fit"] = max(0, min(100, 34 * len(hits) - (50 if bad else 0)))
+        c["fit_reasons"] = hits[:5] + [f"avoid: {k}" for k in bad[:2]]
+
+
+def pick_saturation_targets(rows: list[dict], n: int) -> list[dict]:
+    """Spend the YouTube quota on topics that fit the account; fall back to the top ones if none do."""
+    return [r for r in rows if r.get("fit", 0) > 0][:n] or rows[:n]
+
+
 def rank_topics(clusters: list[dict], limit: int = 40) -> list[dict]:
-    """Multi-source topics first (that is the point of convergence), then by heat."""
-    clusters.sort(key=lambda c: (c["source_count"], c["heat"]), reverse=True)
+    """Multi-source topics first (that is the point of convergence), then fit with the account, then heat."""
+    clusters.sort(key=lambda c: (c["source_count"], c.get("fit", 0), c["heat"]), reverse=True)
     out = []
     for c in clusters[:limit]:
         row = {"topic": c["label"], "sources": [SOURCE_LABELS.get(s, s) for s in c["sources"]],
                "source_count": c["source_count"], "heat": c["heat"],
+               "fit": c.get("fit", 0), "fit_reasons": c.get("fit_reasons", []),
                "lifecycle": c["lifecycle"], "lifecycle_confidence": c["lifecycle_confidence"],
                "window_hint": c["window_hint"], "runs_seen": c["runs_seen"], "age_hours": c["age_hours"],
                "heat_change": c["heat_change"], "signals": c["signals"],

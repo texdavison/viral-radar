@@ -114,6 +114,67 @@ class TopicTests(unittest.TestCase):
         self.assertEqual([r["topic"] for r in T.rank_topics([a, b])], ["B", "A"])
 
 
+class FitTests(unittest.TestCase):
+    posts = [{"id": "w1", "caption": "Dentist Jensen\n\n#jensenhuang #nvidia #funny #fyp #3danimation"},
+             {"id": "w2", "caption": "Odds\n\n#fortnitepiratetoken #lucia #gta6"},
+             {"id": "flop", "caption": "Nope\n\n#cityflop"}]
+
+    def cluster(self, label, evidence=()):
+        return {"label": label, "evidence": [{"text": t} for t in evidence], "source_count": 2, "heat": 5}
+
+    def test_profile_uses_winner_subjects_not_generic_tags(self):
+        p = T.build_profile(self.posts, ["w1", "w2"], ["Roblox"], ["NFL"])
+        for k in ("jensenhuang", "nvidia", "fortnitepiratetoken", "lucia", "gta6", "roblox"):
+            self.assertIn(k, p["keywords"])
+        for k in ("funny", "fyp", "3danimation", "cityflop"):
+            self.assertNotIn(k, p["keywords"])                      # generic, or from a reel that did not win
+        self.assertEqual(p["avoid"], ["nfl"])
+
+    def test_fit_scores_and_explains(self):
+        p = T.build_profile(self.posts, ["w1", "w2"])
+        a, b, c = (self.cluster("Jensen Huang", ["Nvidia shares drop as Jensen Huang returns"]),
+                   self.cluster("GTA 6 trailer"), self.cluster("Weekend weather"))
+        T.attach_fit([a, b, c], p)
+        self.assertEqual(a["fit"], 68)                              # two hits: jensenhuang and nvidia
+        self.assertIn("jensenhuang", a["fit_reasons"])
+        self.assertEqual(b["fit"], 34)                              # one hit: gta6
+        self.assertEqual(c["fit"], 0)
+
+    def test_short_keywords_need_a_whole_word(self):
+        p = {"keywords": ["lucia"], "avoid": []}
+        luciano, lucia = self.cluster("Luciano Pavarotti"), self.cluster("Lucia gta mission")
+        T.attach_fit([luciano, lucia], p)
+        self.assertEqual((luciano["fit"], lucia["fit"]), (0, 34))
+
+    def test_loosely_matched_titles_do_not_create_fit(self):
+        p = {"keywords": ["gta"], "avoid": []}
+        c = {"label": "iphone black friday deals", "source_count": 2, "heat": 5, "evidence": [
+            {"source": "google_trends", "text": "iphone black friday deals"},
+            {"source": "youtube", "text": "GTA 6 on iPhone is here"}, {"source": "hackernews", "text": "GTA tricks"}]}
+        T.attach_fit([c], p)
+        self.assertEqual(c["fit"], 0)
+
+    def test_avoid_keywords_lower_fit(self):
+        p = {"keywords": ["gta6"], "avoid": ["nfl"]}
+        c = self.cluster("NFL gta6 crossover")
+        T.attach_fit([c], p)
+        self.assertEqual(c["fit"], 0)
+        self.assertIn("avoid: nfl", c["fit_reasons"])
+
+    def test_saturation_targets_prefer_fit(self):
+        rows = [{"topic": "NFL", "fit": 0}, {"topic": "GTA", "fit": 34}, {"topic": "Roblox", "fit": 68}]
+        self.assertEqual([r["topic"] for r in T.pick_saturation_targets(rows, 2)], ["GTA", "Roblox"])
+        nofit = [{"topic": "A", "fit": 0}, {"topic": "B", "fit": 0}]
+        self.assertEqual([r["topic"] for r in T.pick_saturation_targets(nofit, 1)], ["A"])   # fallback
+
+    def test_rank_prefers_fit_within_same_source_count(self):
+        a = dict(self.cluster("Plain"), sources=["wikipedia"], aliases=["plain"], fit=0, heat=9,
+                 signals={}, lifecycle="emerging", lifecycle_confidence="low", window_hint="", runs_seen=1,
+                 age_hours=0, heat_change=None)
+        b = dict(a, label="Relevant", fit=68, heat=3)
+        self.assertEqual([r["topic"] for r in T.rank_topics([a, b])], ["Relevant", "Plain"])
+
+
 class InsightTests(unittest.TestCase):
     def reels(self, views, caption="plain"):
         return [{"id": f"r{i}", "views": v, "likes": 1, "comments": 1, "caption": caption if i % 2 else "Send this to a friend\n#a #b"}
