@@ -48,6 +48,13 @@ class TopicTests(unittest.TestCase):
         self.assertEqual(cl[0]["source_count"], 2)
         self.assertIn("politics_war", T.risk_flags(cl[0]))
 
+    def test_shared_calendar_words_do_not_merge_topics(self):
+        sig = {"google_trends": [trend("gta 6 black friday", "50K+", [{"title": "GTA 6 gets a Black Friday discount", "url": "a"}])],
+               "google_trends_intl": [trend("iphone black friday deals", "20K+", [{"title": "Best Black Friday iPhone deals", "url": "b"}])]}
+        cl = T.build_clusters(sig)
+        self.assertEqual(len(cl), 2)
+        self.assertEqual({c["label"] for c in cl}, {"gta 6 black friday", "iphone black friday deals"})
+
     def test_generic_searches_do_not_become_topics(self):
         sig = {"google_trends": [trend("maps"), trend("stock market today"), trend("weather")],
                "hackernews": [{"title": "Drone Maps of Salvage Yards", "points": 99, "discussion": "hn"}]}

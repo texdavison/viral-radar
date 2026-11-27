@@ -25,6 +25,8 @@ new news live latest today tonight""".split())
 STOP |= set("""maps map weather stock stocks market markets price prices score scores game games video videos
 movie movies show shows season episode update updates release date time times near best top free online watch
 review reviews versus results result schedule tickets ticket deal deals sale sales news""".split())
+# Calendar words: two unrelated trends can both say "black friday", so on their own they must never link topics.
+STOP |= set("black friday cyber monday thanksgiving christmas holiday holidays weekend day".split())
 
 SOURCE_LABELS ={"google_trends": "Google Trends (US)", "google_trends_intl": "Google Trends (GB/CA/AU)",
                  "wikipedia": "Wikipedia", "hackernews": "Hacker News", "reddit": "Reddit", "youtube": "YouTube"}
