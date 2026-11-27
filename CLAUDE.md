@@ -27,7 +27,8 @@ Viral Idea Radar dashboard (https://claude.ai/artifact/98fJKAJz1xUpqrpcQ9TxKo).
   Instagram sometimes login-walls: if so, stop; never log in or work around it.
 - `tests/`: `py -m unittest discover -s tests` (keep it green before pushing).
 - `config.json`: subreddits, YouTube keywords and categories, Instagram API settings. Edit freely.
-- `run.ps1`: pull, collect, commit `signals/`, push. Writes `last-run.log`.
+- `.github/workflows/collect.yml`: the scheduled run (tests, collect, commit `signals/`, push as github-actions[bot]).
+- `run.ps1`: manual local run: pull, collect, commit `signals/`, push. Writes `last-run.log`.
 - `.env.example`: copy to `.env` for keys. `.env` is gitignored and must never be committed.
 
 ## First-time setup (Claude Code: do these steps for Tex, asking before anything that needs his input)
@@ -41,9 +42,15 @@ Viral Idea Radar dashboard (https://claude.ai/artifact/98fJKAJz1xUpqrpcQ9TxKo).
    Confirm `.env` is NOT in the commit.
 5. Run once for real: `powershell -ExecutionPolicy Bypass -File run.ps1`, then check `last-run.log`
    and that `signals/latest.json` is on GitHub.
-6. Schedule it every 3 hours with Task Scheduler:
-   `schtasks /Create /TN "ViralRadarCollector" /SC HOURLY /MO 3 /TR "powershell -NoProfile -ExecutionPolicy Bypass -File \"<full path>\run.ps1\"" /F`
-   (use this folder's absolute path). Running only while Tex is signed in is fine.
+6. Scheduling: the collector runs on GitHub Actions every 3 hours (`.github/workflows/collect.yml`), so it
+   doesn't depend on any PC being awake. It needs the repo secret `YOUTUBE_API_KEY` (set it with
+   `gh secret set YOUTUBE_API_KEY --repo texdavison/viral-radar --body <key>`; pass it with `--body`, since piping
+   adds a line break that makes YouTube reject the key). Run it on demand with
+   `gh workflow run collect-signals --repo texdavison/viral-radar`. The old Windows task `ViralRadarCollector`
+   is disabled (it never ran reliably: it only works while signed in, awake, and, by default, on AC power).
+   Don't re-enable it alongside Actions; both write `signals/` and would conflict. GitHub pauses scheduled
+   workflows in a public repo after 60 days with no repo activity: if the file stops updating, re-enable the
+   workflow in the Actions tab. `run.ps1` still works for a manual local run (it pulls first).
 7. Optional, any time: help Tex create a YouTube Data API key and put it in `.env`.
    Quota math: each run uses about 605 units (4 charts + 6 searches at 100 + 1 lookup); 8 runs/day is
    about 4,840 of the free 10,000.
